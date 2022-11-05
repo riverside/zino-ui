@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Rating - Zino UI HTML5 framework</title>
+        <meta name="description" content="HTML5 star rating form control.">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <link rel="stylesheet" href="../../dist/themes/silver/zino.core.css">
+        <link rel="stylesheet" href="../../dist/themes/silver/zino.rating.css">
+        <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+        <script src="../../dist/js/zino.rating.min.js"></script>
+        <style type="text/css">body{padding: 15px; font: normal 12px Arial, sans-serif;}</style>
+    </head>
+    <body>
+    <div class="custom h50"></div>
+
+<script type="text/javascript">
+$(function () {
+    $(".custom").zinoRating({
+        items: [
+            {value: 1, label: "Poor"},
+            {value: 2, label: "Wake"},
+            {value: 3, label: "Good"},
+            {value: 4, label: "Very good", checked: true},
+            {value: 5, label: "Excellent"}
+        ],
+        select: function (event, ui) {
+            $(this).zinoRating("disable");
+        }
+    });
+});
+</script>
+</body>
+</html>

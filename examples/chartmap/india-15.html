@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>ChartMap - Zino UI HTML5 framework</title>
+        <meta name="description" content="Interactive HTML5 maps to plot geographical data.">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <link rel="stylesheet" href="../../dist/themes/silver/zino.core.css">
+        <link rel="stylesheet" href="../../dist/themes/silver/zino.chartmap.css">
+        <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+        <script src="../../dist/js/zino.svg.min.js"></script>
+        <script src="../../dist/js/zino.chartmap.min.js"></script>
+        <style type="text/css">body{padding: 15px; font: normal 12px Arial, sans-serif;}</style>
+    </head>
+    <body>
+    <div id="chartmap"></div>
+
+<script type="text/javascript" src="../../dist/maps/IN.min.js"></script>
+<script type="text/javascript">
+$(function () {
+    $("#chartmap").zinoChartmap({
+        map: "IN",
+        width: 530,
+        height: 320,
+        zoom: 1.13,
+        fill: "#EFEFEF",
+        //background: "#B1B1B1",
+        palette: false,
+        provinces: [
+            {id: 'IND-2431', fill: '#FF9933'},
+            {id: 'IND-3249', fill: '#FF9933'},
+            {id: 'IND-3254', fill: '#FF9933'},
+            {id: 'IND-2429', fill: '#FF9933'},
+            {id: 'IND-2430', fill: '#FF9933'},
+            {id: 'IND-3299', fill: '#FF9933'},
+            {id: 'IND-3259', fill: '#FF9933'},
+            {id: 'IND-3250', fill: '#FF9933'},
+            {id: 'IND-3253', fill: '#FF9933'},
+            {id: 'IND-3258', fill: '#FF9933'},
+            {id: 'IND-2477', fill: '#FF9933'},
+            {id: 'IND-2428', fill: '#FF9933'},
+            {id: 'IND-2474', fill: '#128807'},
+            {id: 'IND-3265', fill: '#128807'},
+            {id: 'IND-2441', fill: '#128807'},
+            {id: 'IND-2442', fill: '#128807'},
+            {id: 'IND-2446', fill: '#128807'},
+            {id: 'IND-3263', fill: '#128807'}
+        ]
+    });
+});
+</script>
+</body>
+</html>

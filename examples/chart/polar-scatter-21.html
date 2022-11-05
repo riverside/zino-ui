@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Chart - Zino UI HTML5 framework</title>
+        <meta name="description" content="Data visualization, pie & donuts charts.">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <link rel="stylesheet" href="../../dist/themes/silver/zino.core.css">
+        <link rel="stylesheet" href="../../dist/themes/silver/zino.chart.css">
+        <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+        <script src="../../dist/js/zino.canvas.min.js"></script>
+        <script src="../../dist/js/zino.svg.min.js"></script>
+        <script src="../../dist/js/zino.chart.min.js"></script>
+        <style type="text/css">body{padding: 15px; font: normal 12px Arial, sans-serif;}</style>
+    </head>
+    <body>
+    <div id="chart"></div>
+
+<script type="text/javascript">
+$(function () {
+    $("#chart").zinoChart({
+        type: "polar",
+        variation: "scatter",
+        width: 530,
+        height: 320,
+        radius: 130,
+        legend: false,
+        categories: [{
+            "category": [
+                {"label": 2006},
+                {"label": 2007},
+                {"label": 2008},
+                {"label": 2009},
+                {"label": 2010},
+                {"label": 2011},
+                {"label": 2012},
+                {"label": 2013}
+            ]
+        }],
+        series: [{
+            "label": "NY Knicks",
+            "color": "#3366CC",
+            "data": [
+                {"value": 3},
+                {"value": 8},
+                {"value": 6},
+                {"value": 2},
+                {"value": 7},
+                {"value": 3},
+                {"value": 5},
+                {"value": 6}
+            ]
+        },{
+            "label": "Miami Heat",
+            "color": "#DC3912",
+            "data": [
+                {"value": 6},
+                {"value": 9},
+                {"value": 5},
+                {"value": 8},
+                {"value": 3},
+                {"value": 5},
+                {"value": 4},
+                {"value": 5}
+            ]
+        },{
+            "label": "LA Clippers",
+            "color": "#067A06",
+            "data": [
+                {"value": 3},
+                {"value": 1},
+                {"value": 4},
+                {"value": 7},
+                {"value": 4},
+                {"value": 9},
+                {"value": 3},
+                {"value": 3}
+            ]
+        }]
+    });
+});   
+</script>
+</body>
+</html>

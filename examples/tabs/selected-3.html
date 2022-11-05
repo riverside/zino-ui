@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Tabs - Zino UI HTML5 framework</title>
+        <meta name="description" content="Transforms a set of container elements into a tab structure.">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <link rel="stylesheet" href="../../dist/themes/silver/zino.core.css">
+        <link rel="stylesheet" href="../../dist/themes/silver/zino.tabs.css">
+        <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+        <script src="../../dist/js/zino.tabs.min.js"></script>
+        <style type="text/css">body{padding: 15px; font: normal 12px Arial, sans-serif;}</style>
+    </head>
+    <body>
+    <div id="tabs">
+    <ul>
+    	<li><a href="#tabs-1">Tab 1</a></li>
+		<li><a href="../../request?plugin=tabs&p=2" rel="nofollow">Remote tab</a></li>
+	</ul>
+    <div id="tabs-1">In the area of graphical user interfaces (GUI), a tabbed document interface (TDI) or a Tab is one that allows multiple documents to be contained within a single window, using tabs as a navigational widget for switching between sets of documents. It is an interface style most commonly associated with web browsers, web applications, text editors, and preference panes.</div>
+</div>
+
+<script type="text/javascript">
+$(function () {
+    $("#tabs").zinoTabs({
+        selected: 1
+    });
+});
+</script>
+</body>
+</html>

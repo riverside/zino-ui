@@ -1,0 +1,132 @@
+/*!
+ * zino-ui v1.5 (https://github.com/riverside/zino-ui)
+ * Copyright 2012-2022 Dimitar Ivanov. All Rights Reserved.
+ */
+.zui-overlay-container{
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	display: none;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.zui-overlay-wrapper{
+	background-color: #666;
+	height: 100%;
+	opacity: 0.5;
+	filter: alpha(opacity = 50);
+	overflow: hidden;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 9500;
+}
+.zui-overlay-holder{
+	background-color: #fff;
+	border: solid 1px #82B9FE;
+	font: 12px normal Arial, sans-serif;
+	position: absolute;
+	z-index: 9600;
+	-moz-box-shadow: 1px 1px 7px 1px rgba(0, 0, 51, 0.3);
+	-webkit-box-shadow: 1px 1px 7px 1px rgba(0, 0, 51, 0.3);
+	box-shadow: 1px 1px 7px 1px rgba(0, 0, 51, 0.3);
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+}
+.zui-overlay-header{
+	background: #E7F1FF; /* Old browsers */
+	background: -moz-linear-gradient(top,  #E7F1FF 0%, #CDE3FE 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#E7F1FF), color-stop(100%,#CDE3FE)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #E7F1FF 0%,#CDE3FE 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #E7F1FF 0%,#CDE3FE 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #E7F1FF 0%,#CDE3FE 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #E7F1FF 0%,#CDE3FE 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#E7F1FF', endColorstr='#CDE3FE',GradientType=0 ); /* IE6-9 */
+
+	border-bottom: solid 1px #9BC7FE;
+	color: #000;
+	font-size: 1.2em;
+	height: 26px;
+	line-height: 28px;
+	position: absolute;
+	text-indent: 5px;
+	top: 0;
+	width: 100%;
+	border-radius: 2px 2px 0 0;
+	-webkit-border-radius: 2px 2px 0 0;
+	-moz-border-radius: 2px 2px 0 0;
+}
+.zui-overlay-content{
+	background-color: #fff;
+	bottom: 28px;
+	color: #000;
+	position: absolute;
+	top: 28px;
+	overflow: auto;
+	padding: 5px;
+	width: auto;
+}
+.zui-overlay-footer{
+	bottom: 5px;
+	position: absolute;
+	height: 30px;
+	padding: 0;
+	left: 5px;
+	right: 5px;
+	width: auto;
+}
+.zui-overlay-footer-inner{
+	float: right;
+	overflow: hidden;
+	margin: 0;
+}
+.zui-overlay-toolbar-icon{
+	cursor: pointer;
+	display: block;
+	height: 16px;
+	width: 16px;
+}
+.zui-overlay-minimize{
+	background: transparent url(img/zui-overlay-minimize.png) 0 2px no-repeat;
+}
+.zui-overlay-maximize{
+	background: transparent url(img/zui-overlay-maximize.png) 0 0 no-repeat;
+}
+.zui-overlay-restore{
+	background: transparent url(img/zui-overlay-restore.png) 0 0 no-repeat;
+}
+.zui-overlay-close{
+	background: transparent url(img/zui-overlay-close.png) 0 0 no-repeat;
+}
+.zui-overlay-header-title{
+	color: #000;
+	float: left;
+}
+.zui-overlay-header-toolbar{
+	float: right;
+	height: 100%;
+	padding: 0 5px 0 0;
+}
+.zui-overlay-toolbar-link:link,
+.zui-overlay-toolbar-link:active,
+.zui-overlay-toolbar-link:visited{
+	display: block;
+	height: 16px;
+	width: 16px;
+	float: left;
+	margin: 5px 0 0 3px;
+	text-decoration: none;
+}
+.zui-overlay-toolbar-link:hover{
+	-moz-border-radius: 2px;
+	-webkit-border-radius: 2px;
+	border-radius: 2px;
+	background-color: #9BC7FE;
+	-moz-box-shadow: inset 0 0 1px #69ABFE;
+	-webkit-box-shadow: inset 0 0 1px #69ABFE;
+	box-shadow: inset 0 0 1px #69ABFE;
+	text-decoration: none;
+}

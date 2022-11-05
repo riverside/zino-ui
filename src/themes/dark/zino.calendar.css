@@ -1,0 +1,101 @@
+/*!
+ * zino-ui v1.5 (https://github.com/riverside/zino-ui)
+ * Copyright 2012-2022 Dimitar Ivanov. All Rights Reserved.
+ */
+.zui-calendar-container{
+	overflow: hidden;
+}
+.zui-calendar-table{
+	border-collapse: separate;
+	border-spacing: 0;
+	border: solid 1px #000;
+	font-family: Tahoma, sans-serif;
+	font-size: 11px;
+	font-weight: normal;
+	float: left;
+	margin: 1px;
+	padding: 0;
+	width: 200px;
+}
+.zui-calendar-table,
+.zui-calendar-table th,
+.zui-calendar-table td {
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+}
+.zui-calendar-table thead tr{
+	background-color: #222;
+}
+.zui-calendar-table thead tr:first-child{
+	line-height: 23px;
+}
+.zui-calendar-table thead th{
+	font-weight: bold;
+	color: #fff;
+	height: 20px;
+	text-align: center;
+}
+.zui-calendar-table tbody td{
+	color: #ECECEC;
+	cursor: pointer;
+	font-weight: normal;
+	height: 25px;
+	padding: 0 0 1px 1px;
+	width: 25px;
+	text-align: center;
+}
+.zui-calendar-table tbody td:first-child{
+	padding: 0 0 1px;
+}
+.zui-calendar-table .zui-calendar-wday,
+.zui-calendar-table .zui-calendar-wnum{
+	font-weight: normal;
+	padding: 1px 1px 2px 2px;
+}
+.zui-calendar-table .zui-calendar-wnum{
+	background-color: #2d2d2d;
+	color: #fff;
+}
+.zui-calendar-table .zui-calendar-empty{
+	background-color: #444;
+	color: #999;
+	cursor: default;
+}
+.zui-calendar-table .zui-calendar-date{
+	background-color: #333;
+}
+.zui-calendar-table .zui-calendar-past{
+	background-color: #5E5E5E;
+	color: #999;
+	cursor: default;
+}
+.zui-calendar-table .zui-calendar-today{
+	background-color: #3d3d3d;
+	color: #B3B3B3;
+}
+.zui-calendar-table .zui-calendar-week{
+	background-color: #777;
+	color: #E5E5E5;
+	cursor: default;
+}
+.zui-calendar-table .zui-calendar-selected{
+	background-color: #1d1d1d;
+	color: #F2F2F2;
+}
+.zui-calendar-table .zui-calendar-over,
+.zui-calendar-table .zui-calendar-date:hover{
+	background-color: #4d4d4d;
+	color: #fff;
+}
+.zui-calendar-table .zui-calendar-past:hover{
+	background-color: #515151;
+	color: #8C8C8C;
+}
+.zui-calendar-table .zui-calendar-month,
+.zui-calendar-table .zui-calendar-navi,
+.zui-calendar-table .zui-calendar-wnum,
+.zui-calendar-table .zui-calendar-wday,
+.zui-calendar-table .zui-calendar-week{
+	cursor: text;
+}

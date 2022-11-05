@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Slider - Zino UI HTML5 framework</title>
+        <meta name="description" content="Displays a flexible slider with ranges and accessibility via keyboard.">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <link rel="stylesheet" href="../../dist/themes/silver/zino.core.css">
+        <link rel="stylesheet" href="../../dist/themes/silver/zino.slider.css">
+        <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+        <script src="../../dist/js/zino.position.min.js"></script>
+        <script src="../../dist/js/zino.draggable.min.js"></script>
+        <script src="../../dist/js/zino.slider.min.js"></script>
+        <style type="text/css">body{padding: 15px; font: normal 12px Arial, sans-serif;}</style>
+    </head>
+    <body>
+    <div id="slider_v1"></div>
+<script type="text/javascript">
+$(function () {
+    $("#slider_v1").zinoSlider({
+        range: true,
+        maxValue: 500,
+        bounds: [20, 60],
+        vertical: true,
+        start: function (event, ui) {
+            console.log("start", event, ui);
+        },
+        stop: function (event, ui) {
+            console.log("stop", event, ui);
+        },
+        slide: function (event, ui) {
+            console.log("slide", event, ui);
+        },
+        change: function (event, ui) {
+            console.log("change", event, ui);
+        }
+    });
+});
+</script>
+</body>
+</html>

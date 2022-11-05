@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Rating - Zino UI HTML5 framework</title>
+        <meta name="description" content="HTML5 star rating form control.">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <link rel="stylesheet" href="../../dist/themes/silver/zino.core.css">
+        <link rel="stylesheet" href="../../dist/themes/silver/zino.rating.css">
+        <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+        <script src="../../dist/js/zino.rating.min.js"></script>
+        <style type="text/css">body{padding: 15px; font: normal 12px Arial, sans-serif;}</style>
+    </head>
+    <body>
+    <select name="select" class="select">
+    <option value="1">Poor</option>
+    <option value="2">Wake</option>
+    <option value="3" selected="selected">Good</option>
+    <option value="4">Very good</option>
+    <option value="5">Excellent</option>
+</select>
+<span id="selectTitle" style="display: none"></span>
+    
+<script type="text/javascript">
+$(function () {
+    $(".select").zinoRating({
+        create: function (event, ui) {
+            //console.log(ui);
+        },
+        select: function (event, ui) {
+            //console.log(ui);
+        },
+        focus: function (event, ui) {
+            $("#selectTitle").text($(ui.input).data("label")).show();
+        },
+        blur: function (event, ui) {
+            $("#selectTitle").hide().text("");
+        }
+    });
+});
+</script>
+</body>
+</html>

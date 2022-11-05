@@ -1,0 +1,67 @@
+/*!
+ * zino-ui v1.5 (https://github.com/riverside/zino-ui)
+ * Copyright 2012-2022 Dimitar Ivanov. All Rights Reserved.
+ */
+.zui-upload{
+	background: #efefef; /* Old browsers */
+	background: -moz-linear-gradient(top,  #efefef 0%, #e3e3e3 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#efefef), color-stop(100%,#e3e3e3)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #efefef 0%,#e3e3e3 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #efefef 0%,#e3e3e3 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #efefef 0%,#e3e3e3 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #efefef 0%,#e3e3e3 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#efefef', endColorstr='#e3e3e3',GradientType=0 ); /* IE6-9 */
+	border: 1px solid #C5C5C5;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	color: #555;
+	display: inline-block;
+	cursor: pointer;
+	width: 100px;
+	height: 30px;
+	position: relative;
+}
+.zui-upload:hover,
+.zui-upload-hover{
+	background: #e3e3e3; /* Old browsers */
+	background: -moz-linear-gradient(top,  #e3e3e3 0%, #ddd 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#e3e3e3), color-stop(100%,#ddd)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #e3e3e3 0%,#ddd 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #e3e3e3 0%,#ddd 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #e3e3e3 0%,#ddd 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #e3e3e3 0%,#ddd 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e3e3e3', endColorstr='#ddd',GradientType=0 ); /* IE6-9 */
+}
+.zui-upload-form{
+	margin: 0;
+	padding: 0;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+}
+.zui-upload-file{
+	display: block;
+	height: 100%;
+	width: 100%;
+	opacity: 0;
+	z-index: 9999;
+}
+.zui-upload-iframe{
+	border: none;
+	height: 0;
+	width: 0;
+}
+.zui-upload-label{
+	position: absolute;
+	display: inline-block;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	font: normal 12px Arial, sans-serif;
+	text-align: center;
+	line-height: 30px;
+}

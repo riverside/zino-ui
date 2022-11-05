@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Canvas - Zino UI HTML5 framework</title>
+        <meta name="description" content="Wrapper micro-library for working with HTML5 Canvas element.">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <link rel="stylesheet" href="../../dist/themes/silver/zino.core.css">
+        <link rel="stylesheet" href="../../dist/themes/silver/zino.canvas.css">
+        <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+        <script src="../../dist/js/zino.canvas.min.js"></script>
+        <style type="text/css">body{padding: 15px; font: normal 12px Arial, sans-serif;}</style>
+    </head>
+    <body>
+    <div id="canvas"></div>
+
+<script type="text/javascript">
+$(function () {
+    var api = zino.Canvas({
+        target: document.getElementById("canvas"),
+        width: 520,
+        height: 320
+    });
+    
+    api.attr({
+        lineWidth: 4,
+        fillStyle: "#EED592",
+        strokeStyle: "#B59554"
+    })
+    .begin()
+    .moveTo(75, 25)
+    .quadraticCurveTo(25, 25, 25, 62.5)
+    .quadraticCurveTo(25, 100, 50, 100)
+    .quadraticCurveTo(50, 120, 30, 125)
+    .quadraticCurveTo(60, 120, 65, 100)
+    .quadraticCurveTo(125, 100, 125, 62.5)
+    .quadraticCurveTo(125, 25, 75, 25)
+    .fill()
+    .stroke();
+});
+</script>
+</body>
+</html>

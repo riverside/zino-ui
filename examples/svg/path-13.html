@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>SVG - Zino UI HTML5 framework</title>
+        <meta name="description" content="Wrapper micro-library for working with SVG (scalable vector graphics).">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <link rel="stylesheet" href="../../dist/themes/silver/zino.core.css">
+        <link rel="stylesheet" href="../../dist/themes/silver/zino.svg.css">
+        <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+        <script src="../../dist/js/zino.svg.min.js"></script>
+        <style type="text/css">body{padding: 15px; font: normal 12px Arial, sans-serif;}</style>
+    </head>
+    <body>
+    <div id="svg"></div>
+
+<script type="text/javascript">
+$(function () {
+    var api = zino.Svg({
+        target: document.getElementById("svg"),
+        width: 520,
+        height: 320
+    });
+    api.path("M230 80 A 45 45, 0, 1, 0, 275 125 L 275 80 Z").attr({
+        "fill": "#EED592",
+        "stroke": "#957030",
+        "stroke-width": 4
+    }).insert();
+});
+</script>
+</body>
+</html>

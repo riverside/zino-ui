@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>TreeView - Zino UI HTML5 framework</title>
+        <meta name="description" content="Presents a hierarchical view of information.">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <link rel="stylesheet" href="../../dist/themes/silver/zino.core.css">
+        <link rel="stylesheet" href="../../dist/themes/silver/zino.treeview.css">
+        <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+        <script src="../../dist/js/zino.datasource.min.js"></script>
+        <script src="../../dist/js/zino.treeview.min.js"></script>
+        <style type="text/css">body{padding: 15px; font: normal 12px Arial, sans-serif;}</style>
+    </head>
+    <body>
+    <div id="treeview" style="float: left"></div>
+
+<div style="width: 100px; float: right">
+    <input type="button" value="Collapse" id="btnCollapse" />
+    <input type="button" value="Expand" id="btnExpand" />
+    <input type="button" value="Collapse All" id="btnCollapseAll" />
+	<input type="button" value="Expand All" id="btnExpandAll" />
+	<input type="button" value="Remove" id="btnRemove" />
+	<input type="button" value="Next item" id="btnNext" />
+	<input type="button" value="Prev item" id="btnPrev" />
+</div>
+
+<script type="text/javascript">
+$(function () {
+    var ds = zino.DataSource({
+        dataUrl: "../../request?plugin=treeview&type=json",
+        dataType: "json"
+    });
+    $("#treeview").zinoTreeview({
+        dataSource: ds
+    });
+    
+    $("#btnCollapse").click(function () {
+        $("#treeview").zinoTreeview("collapse", $("#treeview").zinoTreeview("getSelected"));
+    });
+    $("#btnExpand").click(function () {
+        $("#treeview").zinoTreeview("expand", $("#treeview").zinoTreeview("getSelected"));
+    });
+    $("#btnCollapseAll").click(function () {
+        $("#treeview").zinoTreeview("collapseAll");
+    });
+    $("#btnExpandAll").click(function () {
+        $("#treeview").zinoTreeview("expandAll");
+    });
+    $("#btnRemove").click(function () {
+        $("#treeview").zinoTreeview("remove", $("#treeview").zinoTreeview("getSelected"));
+    });
+    $("#btnNext").click(function () {
+        var next = $("#treeview").zinoTreeview("getNext", $("#treeview").zinoTreeview("getSelected"));
+        $("#treeview").zinoTreeview("select", next);
+    });
+    $("#btnPrev").click(function () {
+        var prev = $("#treeview").zinoTreeview("getPrev", $("#treeview").zinoTreeview("getSelected"));
+        $("#treeview").zinoTreeview("select", prev);
+    });
+});
+</script>
+</body>
+</html>

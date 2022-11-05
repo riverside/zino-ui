@@ -1,0 +1,100 @@
+/*!
+ * zino-ui v1.5 (https://github.com/riverside/zino-ui)
+ * Copyright 2012-2022 Dimitar Ivanov. All Rights Reserved.
+ */
+.zui-buttonset{
+	border-top: solid 1px #82B9FE;
+	border-bottom: solid 1px #82B9FE;
+	border-right: solid 1px #82B9FE;
+	-moz-box-shadow: inset 0 0 1px #fff;
+	-webkit-box-shadow: inset 0 0 1px #fff;
+	box-shadow: inset 0 0 1px #fff;
+	color: #000;
+	cursor: pointer;
+	float: left;
+	font-weight: bold;
+	font-family: Arial, sans-serif;
+	font-size: 12px;
+	line-height: 20px;
+	outline: none;
+	padding: 3px 10px;
+	text-align: center;
+	text-shadow: 1px 1px 1px #fff;
+	white-space: nowrap;
+}
+.zui-buttonset-left{
+	-moz-border-radius-topleft: 3px;
+	-moz-border-radius-bottomleft: 3px;
+	-webkit-border-top-left-radius: 3px;
+	-webkit-border-bottom-left-radius: 3px;
+	border-top-left-radius: 3px;
+	border-bottom-left-radius: 3px;
+	border-left: solid 1px #82B9FE;
+}
+.zui-buttonset-right{
+	-moz-border-radius-topright: 3px;
+	-moz-border-radius-bottomright: 3px;
+	-webkit-border-top-right-radius: 3px;
+	-webkit-border-bottom-right-radius: 3px;
+	border-top-right-radius: 3px;
+	border-bottom-right-radius: 3px;
+}
+.zui-buttonset-hidden{
+	display: none;
+	position: absolute !important;
+}
+.zui-buttonset{
+	background: #E7F1FF; /* Old browsers */
+	background: -moz-linear-gradient(top,  #E7F1FF 0%, #CDE3FE 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#E7F1FF), color-stop(100%,#CDE3FE)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #E7F1FF 0%,#CDE3FE 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #E7F1FF 0%,#CDE3FE 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #E7F1FF 0%,#CDE3FE 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #E7F1FF 0%,#CDE3FE 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#E7F1FF', endColorstr='#CDE3FE',GradientType=0 ); /* IE6-9 */
+	color: #000;
+	text-decoration: none;
+}
+.zui-buttonset:hover{
+	background: #CDE3FE; /* Old browsers */
+	background: -moz-linear-gradient(top,  #CDE3FE 0%, #E7F1FF 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#CDE3FE), color-stop(100%,#E7F1FF)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #CDE3FE 0%,#E7F1FF 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #CDE3FE 0%,#E7F1FF 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #CDE3FE 0%,#E7F1FF 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #CDE3FE 0%,#E7F1FF 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#CDE3FE', endColorstr='#E7F1FF',GradientType=0 ); /* IE6-9 */
+	color: #000;
+	text-decoration: none;
+}
+[aria-pressed="true"],
+[aria-checked="true"],
+.zui-buttonset:focus{
+	box-shadow: 0 0 5px #C0C0C0;
+}
+[aria-pressed="true"],
+[aria-checked="true"],
+.zui-buttonset:active{
+	background: #B4D5FE; /* Old browsers */
+	background: -moz-linear-gradient(top,  #B4D5FE 0%, #E7F1FF 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#B4D5FE), color-stop(100%,#E7F1FF)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #B4D5FE 0%,#E7F1FF 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #B4D5FE 0%,#E7F1FF 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #B4D5FE 0%,#E7F1FF 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #B4D5FE 0%,#E7F1FF 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#B4D5FE', endColorstr='#E7F1FF',GradientType=0 ); /* IE6-9 */
+}
+[aria-disabled="true"],
+[aria-disabled="true"]:hover{
+	background: #F7F7F7; /* Old browsers */
+	background: -moz-linear-gradient(top,  #F7F7F7 0%, #f4f4f4 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#F7F7F7), color-stop(100%,#f4f4f4)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #F7F7F7 0%,#f4f4f4 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #F7F7F7 0%,#f4f4f4 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #F7F7F7 0%,#f4f4f4 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #F7F7F7 0%,#f4f4f4 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#F7F7F7', endColorstr='#f4f4f4',GradientType=0 ); /* IE6-9 */
+	
+	color: #999;
+	cursor: default;
+}

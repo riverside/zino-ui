@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Resizable - Zino UI HTML5 framework</title>
+        <meta name="description" content="Enables resize functionality for any element.">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <link rel="stylesheet" href="../../dist/themes/silver/zino.core.css">
+        <link rel="stylesheet" href="../../dist/themes/silver/zino.resizable.css">
+        <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+        <script src="../../dist/js/zino.position.min.js"></script>
+        <script src="../../dist/js/zino.resizable.min.js"></script>
+        <style type="text/css">body{padding: 15px; font: normal 12px Arial, sans-serif;}</style>
+    </head>
+    <body>
+    <style type="text/css">
+.r1{
+    background: #5dc1e4; /* Old browsers */
+    background: -moz-linear-gradient(top,  #5dc1e4 0%, #3aa8ff 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#5dc1e4), color-stop(100%,#3aa8ff)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  #5dc1e4 0%,#3aa8ff 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  #5dc1e4 0%,#3aa8ff 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  #5dc1e4 0%,#3aa8ff 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  #5dc1e4 0%,#3aa8ff 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5dc1e4', endColorstr='#3aa8ff',GradientType=0 ); /* IE6-9 */
+    width: 100px;
+    height: 70px;
+}
+</style>
+
+<div style="border: solid 1px #000; width: 520px; height: 320px; position: absolute">
+    <div id="resizable" class="r1"></div>
+</div>
+
+<script type="text/javascript">
+$(function () {
+    $("#resizable").zinoResizable();
+});
+</script>
+</body>
+</html>

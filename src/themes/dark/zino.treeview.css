@@ -1,0 +1,68 @@
+/*!
+ * zino-ui v1.5 (https://github.com/riverside/zino-ui)
+ * Copyright 2012-2022 Dimitar Ivanov. All Rights Reserved.
+ */
+.zui-treeview{
+	font: normal 12px Arial, sans-serif;
+}
+.zui-treeview-list-root,
+.zui-treeview-list{
+	color: #000;
+	display: none;
+	list-style: none;
+	margin: 0;
+	padding: 0 0 0 10px;
+}
+.zui-treeview-list-root{
+	display: block;
+}
+.zui-treeview-item{
+	margin: 1px 0 0 0;
+	/*outline: none;*/
+}
+.zui-treeview-label{
+	border: 1px solid transparent;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+	cursor: pointer;
+	display: inline-block;
+	padding: 3px 5px;
+}
+.zui-treeview-label-hover{
+	background: #B3B3B3; /* Old browsers */
+	background: -moz-linear-gradient(top,  #B3B3B3 0%, #919191 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#B3B3B3), color-stop(100%,#919191)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #B3B3B3 0%,#919191 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #B3B3B3 0%,#919191 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #B3B3B3 0%,#919191 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #B3B3B3 0%,#919191 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#B3B3B3', endColorstr='#919191',GradientType=0 ); /* IE6-9 */
+	border: 1px solid #1A1A1A;
+	color: #fff;
+}
+.zui-treeview-label-selected{
+	background: #444; /* Old browsers */
+	background: -moz-linear-gradient(top,  #444 0%, #333 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#444), color-stop(100%,#333)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #444 0%,#333 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #444 0%,#333 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #444 0%,#333 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #444 0%,#333 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#444', endColorstr='#333',GradientType=0 ); /* IE6-9 */
+	border: 1px solid #000;
+	color: #fff;
+}
+.zui-treeview-arrow{
+	cursor: pointer;
+	float: left;
+	width: 16px;
+	height: 16px;
+	margin: 3px 0 0;
+}
+.zui-treeview-arrow-collapse{
+	background: url(img/zui-treeview-collapse.png) 0 0 no-repeat;
+}
+.zui-treeview-arrow-expand{
+	background: url(img/zui-treeview-expand.png) 0 0 no-repeat;
+}

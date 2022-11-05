@@ -1,0 +1,99 @@
+/*!
+ * zino-ui v1.5 (https://github.com/riverside/zino-ui)
+ * Copyright 2012-2022 Dimitar Ivanov. All Rights Reserved.
+ */
+.zui-spinner{}
+.zui-spinner-holder{
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+	border: solid 1px #82B9FE;
+	display: inline-block;
+	height: 27px;
+	overflow: hidden;
+	position: relative;
+}
+.zui-spinner-input{
+	background-color: #fff;
+	border: none;
+	color: #000;
+	font: normal 12px/12px Arial, sans-serif;
+	margin: 0;
+	overflow: hidden;
+	outline: none;
+	padding: 6px 0;
+	text-align: right;
+}
+.zui-spinner-focus{
+	border: solid 1px #509DFE;
+}
+.zui-spinner-up,
+.zui-spinner-down{
+	background: #E7F1FF; /* Old browsers */
+	background: -moz-linear-gradient(top,  #E7F1FF 0%, #CDE3FE 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#E7F1FF), color-stop(100%,#CDE3FE)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #E7F1FF 0%,#CDE3FE 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #E7F1FF 0%,#CDE3FE 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #E7F1FF 0%,#CDE3FE 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #E7F1FF 0%,#CDE3FE 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#E7F1FF', endColorstr='#CDE3FE',GradientType=0 ); /* IE6-9 */	
+	
+	border-left: solid 1px #82B9FE;
+	cursor: pointer;
+	display: block;
+	position: absolute;
+	right: 0;
+	width: 23px;
+	height: 13px;
+}
+.zui-spinner-up{
+	top: 0;
+}
+.zui-spinner-down{
+	border-top: solid 1px #82B9FE;
+	top: 13px;
+}
+.zui-spinner-up span,
+.zui-spinner-down span{
+	display: block;
+	width: 13px;
+	height: 8px;
+	margin: 3px 0 0 4px;
+	
+}
+.zui-spinner-up span{
+	background: url(img/zui-selectbox.png) 0 0 no-repeat;
+}
+.zui-spinner-down span{
+	background: url(img/zui-selectbox.png) 0 -24px no-repeat;
+}
+.zui-spinner-up-hover,
+.zui-spinner-down-hover{
+	background: #B4D5FE; /* Old browsers */
+	background: -moz-linear-gradient(top,  #B4D5FE 0%, #E7F1FF 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#B4D5FE), color-stop(100%,#E7F1FF)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #B4D5FE 0%,#E7F1FF 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #B4D5FE 0%,#E7F1FF 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #B4D5FE 0%,#E7F1FF 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #B4D5FE 0%,#E7F1FF 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#B4D5FE', endColorstr='#E7F1FF',GradientType=0 ); /* IE6-9 */
+}
+.zui-spinner-up-hover span{
+	background: url(img/zui-selectbox.png) 0 -8px no-repeat;
+}
+.zui-spinner-down-hover span{
+	background: url(img/zui-selectbox.png) 0 -16px no-repeat;
+}
+.zui-spinner-up-click,
+.zui-spinner-down-click{
+	background: #B4D5FE;
+}
+.zui-spinner-up-click span{
+	margin-top: 2px;
+}
+.zui-spinner-down-click span{
+	margin-top: 4px;
+}
+[aria-invalid="true"]{
+	color: red;
+}

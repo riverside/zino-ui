@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Chart - Zino UI HTML5 framework</title>
+        <meta name="description" content="Data visualization, pie & donuts charts.">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <link rel="stylesheet" href="../../dist/themes/silver/zino.core.css">
+        <link rel="stylesheet" href="../../dist/themes/silver/zino.chart.css">
+        <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+        <script src="../../dist/js/zino.canvas.min.js"></script>
+        <script src="../../dist/js/zino.svg.min.js"></script>
+        <script src="../../dist/js/zino.chart.min.js"></script>
+        <style type="text/css">body{padding: 15px; font: normal 12px Arial, sans-serif;}</style>
+    </head>
+    <body>
+    <div id="chart"></div>
+
+<script type="text/javascript">
+$(function () {
+    $("#chart").zinoChart({
+        type: "donut",
+        width: 530,
+        height: 320,
+        innerRadius: 75,
+        radius: 150,
+        title: 'NBA Teams',
+        legend: true,
+        series: [
+            {'label': 'N.Y. Knicks', 'value': 38, 'color': "#3265CB"},
+            {'label': 'Miami Heat', 'value': 26, 'color': "#0098C6"},
+            {'label': 'N.O. Hornets', 'value': 15, 'color': "#980098"},
+            {'label': 'L.A. Lakers', 'value': 21, 'color': "#109618"},
+            {'label': 'O.C. Thunder', 'value': 19, 'color': "#FF9800"},
+            {'label': 'S.A. Spurs', 'value': 17, 'color': "#DC3811"}
+        ]
+    });
+});   
+</script>
+</body>
+</html>

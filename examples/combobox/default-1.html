@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>ComboBox - Zino UI HTML5 framework</title>
+        <meta name="description" content="A combination of a drop-down list or list box and a single-line editable textbox.">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <link rel="stylesheet" href="../../dist/themes/silver/zino.core.css">
+        <link rel="stylesheet" href="../../dist/themes/silver/zino.combobox.css">
+        <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+        <script src="../../dist/js/zino.datasource.min.js"></script>
+        <script src="../../dist/js/zino.combobox.min.js"></script>
+        <style type="text/css">body{padding: 15px; font: normal 12px Arial, sans-serif;}</style>
+    </head>
+    <body>
+    <input type="text" id="combo" />
+ 
+<script type="text/javascript">
+$(function () {
+    var ds = zino.DataSource({
+        data: [
+            {name: "Alabama"}, {name: "Alaska"}, {name: "Arizona"}, {name: "Arkansas"}, {name: "California"},
+            {name: "Colorado"}, {name: "Connecticut"}, {name: "Delaware"}, {name: "District of Columbia"}, {name: "Florida"},
+            {name: "Georgia"}, {name: "Hawaii"}, {name: "Idaho"}, {name: "Illinois"}, {name: "Indiana"},
+            {name: "Iowa"}, {name: "Kansas"}, {name: "Kentucky"}, {name: "Louisiana"}, {name: "Maine"},
+            {name: "Maryland"}, {name: "Massachusetts"}, {name: "Michigan"}, {name: "Minnesota"}, {name: "Missouri"},
+            {name: "Montana"}, {name: "Nebraska"}, {name: "Nevada"}, {name: "New Hampshire"}, {name: "New Jersey"},
+            {name: "New Mexico"}, {name: "New York"}, {name: "North Carolina"}, {name: "North Dakota"}, {name: "Ohio"},
+            {name: "Oklahoma"}, {name: "Oregon"}, {name: "Pennsylvania"}, {name: "Rhode Island"}, {name: "South Carolina"},
+            {name: "South Dakota"}, {name: "Tennessee"}, {name: "Texas"}, {name: "Utah"}, {name: "Vermont"},
+            {name: "Virginia"}, {name: "Washington"}, {name: "West Virginia"}, {name: "Wisconsin"}, {name: "Wyoming"}
+        ],
+        fields: ["name"]
+    });
+    $("#combo").zinoCombobox({
+        dataSource: ds,
+        multiple: true,
+        autocomplete: true
+    });
+});
+</script>
+</body>
+</html>

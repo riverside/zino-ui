@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>DataTable - Zino UI HTML5 framework</title>
+        <meta name="description" content="An on-screen display of the information presented in columnar format, with field names at the top.">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <link rel="stylesheet" href="../../dist/themes/silver/zino.core.css">
+        <link rel="stylesheet" href="../../dist/themes/silver/zino.datatable.css">
+        <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+        <script src="../../dist/js/zino.datasource.min.js"></script>
+        <script src="../../dist/js/zino.datatable.min.js"></script>
+        <style type="text/css">body{padding: 15px; font: normal 12px Arial, sans-serif;}</style>
+    </head>
+    <body>
+    <div id="datatable"></div>
+
+<script type="text/javascript">
+$(function () {
+    var ds = zino.DataSource({
+        dataUrl: "../../request?plugin=datatable&type=xml",
+        dataType: "xml",
+        xmlRoot: "roster",
+        xmlRecord: "player",
+        fields: [
+            {name: "Num", type: "int", label: "Number"},
+            {name: "Name", type: "string", label: "Player Name"},
+            {name: "Pos", type: "string", label: "Position"},
+            {name: "Height", type: "string", label: "Height"},
+            {name: "Weight", type: "numeric", label: "Weight"},
+            {name: "Birthday", type: "string", label: "Birthday"},
+            {name: "Years", type: "integer", label: "Years pro"}
+        ]
+    });
+    $("#datatable").zinoDatatable({
+        dataSource: ds
+    });
+});
+</script>
+</body>
+</html>

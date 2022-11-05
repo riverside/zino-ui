@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Chart - Zino UI HTML5 framework</title>
+        <meta name="description" content="Data visualization, pie & donuts charts.">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <link rel="stylesheet" href="../../dist/themes/silver/zino.core.css">
+        <link rel="stylesheet" href="../../dist/themes/silver/zino.chart.css">
+        <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+        <script src="../../dist/js/zino.canvas.min.js"></script>
+        <script src="../../dist/js/zino.svg.min.js"></script>
+        <script src="../../dist/js/zino.chart.min.js"></script>
+        <style type="text/css">body{padding: 15px; font: normal 12px Arial, sans-serif;}</style>
+    </head>
+    <body>
+    <div id="chart"></div>
+
+<script type="text/javascript">
+$(function () {
+    $("#chart").zinoChart({
+        type: "scatter",
+        width: 530,
+        height: 320,
+        tooltip: false,
+        categories: [{
+            "category": [
+                {"label": 5},
+                {"label": 15},
+                {"label": 25},
+                {"label": 35},
+                {"label": 45},
+                {"label": 55},
+                {"label": 65},
+                {"label": 75},
+                {"label": 85},
+                {"label": 95}
+            ]
+        }],
+        series: [{
+            "label": "Men",
+            "color": "#3366CC",
+            "data": [
+                {"x": 37, "y": 182},
+                {"x": 61, "y": 172},
+                {"x": 55, "y": 134},
+                {"x": 42, "y": 179},
+                {"x": 29, "y": 150},
+                {"x": 31, "y": 161},
+                {"x": 37, "y": 158},
+                {"x": 42, "y": 147},
+                {"x": 56, "y": 138},
+                {"x": 59, "y": 120}
+            ]
+        },{
+            "label": "Women",
+            "color": "#DC3912",
+            "data": [
+                {"x": 16, "y": 120},
+                {"x": 25, "y": 134},
+                {"x": 33, "y": 111},
+                {"x": 41, "y": 162},
+                {"x": 19, "y": 140},
+                {"x": 37, "y": 151},
+                {"x": 30, "y": 128},
+                {"x": 28, "y": 132},
+                {"x": 43, "y": 144},
+                {"x": 35, "y": 149}
+            ]
+        }]
+    });
+});   
+</script>
+</body>
+</html>

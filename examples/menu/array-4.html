@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Menu - Zino UI HTML5 framework</title>
+        <meta name="description" content="Creates nestable menus, accessible via keyboard.">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <link rel="stylesheet" href="../../dist/themes/silver/zino.core.css">
+        <link rel="stylesheet" href="../../dist/themes/silver/zino.menu.css">
+        <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+        <script src="../../dist/js/zino.datasource.min.js"></script>
+        <script src="../../dist/js/zino.menu.min.js"></script>
+        <style type="text/css">body{padding: 15px; font: normal 12px Arial, sans-serif;}</style>
+    </head>
+    <body>
+    <div id="menu_array"></div>
+
+<script type="text/javascript">
+$(function () {
+    var ds = zino.DataSource({
+        data: [
+            {"id": 30, "parent_id": 0, "text": "New York Knicks", "url": "#"},
+            {"id": 60, "parent_id": 0, "text": "Oklahoma City Thunder", "url": "#"},
+            {"id": 71, "parent_id": 0, "text": "L.A. Clippers", "url": "#"},
+    		{"id": 51, "parent_id": 0, "text": "Washington Wizards", "url": "#"},
+			{"id": 300, "parent_id": 30, "text": "Carmelo Anthony", "url": "#"},
+			{"id": 301, "parent_id": 30, "text": "J.R. Smith", "url": "#"},
+			{"id": 302, "parent_id": 30, "text": "Amare Stoudemire", "url": "#"},
+			{"id": 600, "parent_id": 60, "text": "Kevin Durant", "url": "#"},
+			{"id": 601, "parent_id": 60, "text": "Russell Westbrook", "url": "#"},
+			{"id": 602, "parent_id": 60, "text": "Serge Ibaka", "url": "#"},
+			{"id": 710, "parent_id": 71, "text": "Chris Paul", "url": "#"},
+			{"id": 711, "parent_id": 71, "text": "DeAndre Jordan", "url": "#"},
+			{"id": 712, "parent_id": 71, "text": "Blake Griffin", "url": "#"},
+			{"id": 510, "parent_id": 51, "text": "John Wall", "url": "#"},
+			{"id": 511, "parent_id": 51, "text": "Nene", "url": "#"},
+			{"id": 512, "parent_id": 51, "text": "Bradley Beal", "url": "#"}
+		]
+    });
+    $("#menu_array").zinoMenu({
+        dataSource: ds
+	});
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>TreeView - Zino UI HTML5 framework</title>
+        <meta name="description" content="Presents a hierarchical view of information.">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <link rel="stylesheet" href="../../dist/themes/silver/zino.core.css">
+        <link rel="stylesheet" href="../../dist/themes/silver/zino.treeview.css">
+        <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+        <script src="../../dist/js/zino.datasource.min.js"></script>
+        <script src="../../dist/js/zino.treeview.min.js"></script>
+        <style type="text/css">body{padding: 15px; font: normal 12px Arial, sans-serif;}</style>
+    </head>
+    <body>
+    <div id="treeview"></div>
+
+<script type="text/javascript">
+$(function () {
+    var ds = zino.DataSource({
+        data: [
+            {"id": 30, "parent_id": 3, "text": "New York Knicks", "expanded": true},
+            {"id": 60, "parent_id": 6, "text": "Oklahoma City Thunder"},
+            {"id": 50, "parent_id": 5, "text": "Charlotte Bobcats"},
+            {"id": 71, "parent_id": 7, "text": "Los Angeles Clippers"},
+            {"id": 51, "parent_id": 5, "text": "Washington Wizards"},
+            {"id": 61, "parent_id": 6, "text": "Portland Trailblazers"},
+            {"id": 80, "parent_id": 8, "text": "New Orleans Hornets"},
+            {"id": 1, "parent_id": 0, "text": "Eastern Conference", "expanded": true},
+            {"id": 2, "parent_id": 0, "text": "Western Conference"},
+            {"id": 3, "parent_id": 1, "text": "Atlantic Division", "expanded": true},
+            {"id": 4, "parent_id": 1, "text": "Central Division"},
+            {"id": 5, "parent_id": 1, "text": "Southeast Division"},
+            {"id": 6, "parent_id": 2, "text": "Northwest Division"},
+            {"id": 7, "parent_id": 2, "text": "Pasific Division"},
+            {"id": 8, "parent_id": 2, "text": "Southwest Division"},
+            {"id": 300, "parent_id": 30, "text": "Carmelo Anthony"},
+            {"id": 301, "parent_id": 30, "text": "J.R. Smith", "selected": true},
+            {"id": 302, "parent_id": 30, "text": "Amare Stoudemire"},
+            {"id": 600, "parent_id": 60, "text": "Kevin Durant"},
+            {"id": 601, "parent_id": 60, "text": "Russell Westbrooke"},
+            {"id": 602, "parent_id": 60, "text": "Serge Ibaka"},
+            {"id": 800, "parent_id": 80, "text": "Anthony Davis"},
+            {"id": 801, "parent_id": 80, "text": "Austin Rivers"},
+            {"id": 710, "parent_id": 71, "text": "Chris Paul"},
+            {"id": 711, "parent_id": 71, "text": "DeAndre Jordan"},
+            {"id": 712, "parent_id": 71, "text": "Blake Griffin"},
+            {"id": 510, "parent_id": 51, "text": "John Wall"},
+            {"id": 511, "parent_id": 51, "text": "Nene"},
+            {"id": 512, "parent_id": 51, "text": "Bradley Beal"},
+            {"id": 500, "parent_id": 50, "text": "Michael Kidd-Gilchrist"},
+            {"id": 610, "parent_id": 61, "text": "LaMarcus Aldridge"},
+            {"id": 611, "parent_id": 61, "text": "Damian Lillard"}
+        ]
+    });
+    $("#treeview").zinoTreeview({
+        dataSource: ds
+    });
+});
+</script>
+</body>
+</html>

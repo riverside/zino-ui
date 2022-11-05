@@ -1,0 +1,32 @@
+{
+  "name": "zino-ui",
+  "version": "1.5.0",
+  "description": "jQuery UI Components",
+  "keywords": [
+    "jquery",
+    "ui",
+    "ui-component",
+    "jquery-component"
+  ],
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": {
+    "name": "Dimitar Ivanov",
+    "url": "https://twitter.com/DimitarIvanov"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/riverside/zino-ui.git"
+  },
+  "bugs": "https://github.com/riverside/zino-ui/issues",
+  "homepage": "https://github.com/riverside/zino-ui",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-rename": "^2.0.0",
+    "gulp-uglify": "^3.0.2"
+  }
+}

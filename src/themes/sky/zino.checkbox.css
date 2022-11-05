@@ -1,0 +1,28 @@
+/*!
+ * zino-ui v1.5 (https://github.com/riverside/zino-ui)
+ * Copyright 2012-2022 Dimitar Ivanov. All Rights Reserved.
+ */
+.zui-checkbox{
+	font: normal 12px Arial, sans-serif;
+	list-style: none;
+	margin: 0;
+	padding: 0;	
+}
+.zui-checkbox li{
+	margin: 2px 0;
+	padding: 2px 0 2px 20px;
+}
+.zui-checkbox-checked,
+.zui-checkbox li[aria-checked="true"]{
+	background: url(img/zui-checkbox-checked.png) 0 2px no-repeat;
+}
+.zui-checkbox-unchecked,
+.zui-checkbox li[aria-checked="false"]{
+	background: url(img/zui-checkbox.png) 0 2px no-repeat;
+}
+.zui-checkbox-focus{
+	
+}
+.zui-checkbox-hover{
+	
+}

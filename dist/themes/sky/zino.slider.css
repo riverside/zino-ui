@@ -1,0 +1,106 @@
+/*!
+ * zino-ui v1.5 (https://github.com/riverside/zino-ui)
+ * Copyright 2012-2022 Dimitar Ivanov. All Rights Reserved.
+ */
+.zui-slider{
+	position: relative;
+	height: 16px;
+}
+.zui-slider-vertical{
+	width: 16px;
+}
+.zui-slider-handle{
+	background: transparent url(img/zui-slider-handle.png) 0 0 no-repeat;
+	display: block;
+	height: 16px;
+	position: absolute;
+	width: 16px;
+	z-index: 100;
+}
+.zui-slider-vertical .zui-slider-handle{
+	background: transparent url(img/zui-slider-handle.png) 0 0 no-repeat;
+}
+.zui-slider-handle-active,
+.zui-slider-vertical .zui-slider-handle-active{
+	background-position: 0 -16px;
+}
+a.zui-slider-handle-focus{
+	outline: auto 5px #E59700;
+}
+.zui-slider-left{
+	left: 10px;
+	top: 0;
+}
+.zui-slider-right{
+	right: 10px;
+	top: 0;
+}
+.zui-slider-up{
+	left: 0;
+	top: 10px;
+}
+.zui-slider-down{
+	left: 0;
+	bottom: 10px;
+}
+.zui-slider-scale{
+	border-top: solid 1px #777;
+	border-bottom: solid 1px #999;
+	background-color: #ccc;
+	border-radius: 4px;
+	height: 6px;
+	position: absolute;
+	left: 0;
+	top: 4px;
+	width: 100%;
+	z-index: 98;
+}
+.zui-slider-vertical .zui-slider-scale{
+	border: none;
+	border-left: solid 1px #777;
+	border-right: solid 1px #999;
+	height: 100%;
+	left: 4px;
+	top: 0;
+	width: 6px;
+}
+.zui-slider-range{
+	border-top: solid 1px #3990F8;
+	border-bottom: solid 1px #3990F8;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	border-radius: 4px;
+	background: #E7F1FF; /* Old browsers */
+	background: -moz-linear-gradient(top,  #E7F1FF 0%, #CDE3FE 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#E7F1FF), color-stop(100%,#CDE3FE)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #E7F1FF 0%,#CDE3FE 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #E7F1FF 0%,#CDE3FE 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #E7F1FF 0%,#CDE3FE 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #E7F1FF 0%,#CDE3FE 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#E7F1FF', endColorstr='#CDE3FE',GradientType=0 ); /* IE6-9 */
+
+	height: 6px;
+	position: absolute;
+	left: 0;
+	top: 4px;
+	width: 100%;
+	z-index: 99;
+}
+.zui-slider-vertical .zui-slider-range{
+	background: #E7F1FF; /* Old browsers */
+	background: -moz-linear-gradient(left,  #E7F1FF 0%, #CDE3FE 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, right top, color-stop(0%,#E7F1FF), color-stop(100%,#CDE3FE)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(left,  #E7F1FF 0%,#CDE3FE 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(left,  #E7F1FF 0%,#CDE3FE 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(left,  #E7F1FF 0%,#CDE3FE 100%); /* IE10+ */
+	background: linear-gradient(to right,  #E7F1FF 0%,#CDE3FE 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#E7F1FF', endColorstr='#CDE3FE',GradientType=1 ); /* IE6-9 */
+	
+	border: none;
+	border-left: solid 1px #3990F8;
+	border-right: solid 1px #3990F8;
+	height: 100%;
+	left: 4px;
+	top: 0;
+	width: 6px;
+}

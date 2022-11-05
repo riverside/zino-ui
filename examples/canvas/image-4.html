@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Canvas - Zino UI HTML5 framework</title>
+        <meta name="description" content="Wrapper micro-library for working with HTML5 Canvas element.">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <link rel="stylesheet" href="../../dist/themes/silver/zino.core.css">
+        <link rel="stylesheet" href="../../dist/themes/silver/zino.canvas.css">
+        <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+        <script src="../../dist/js/zino.canvas.min.js"></script>
+        <style type="text/css">body{padding: 15px; font: normal 12px Arial, sans-serif;}</style>
+    </head>
+    <body>
+    <div id="canvas"></div>
+
+<script type="text/javascript">
+$(function () {
+    var api = zino.Canvas({
+        target: document.getElementById("canvas"),
+        width: 520,
+        height: 320
+    });
+    
+    api.image("http://www.w3.org/html/logo/downloads/HTML5_Logo_128.png", 196, 96, 128, 128);
+});
+</script>
+</body>
+</html>

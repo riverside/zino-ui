@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Chart - Zino UI HTML5 framework</title>
+        <meta name="description" content="Data visualization, pie & donuts charts.">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <link rel="stylesheet" href="../../dist/themes/silver/zino.core.css">
+        <link rel="stylesheet" href="../../dist/themes/silver/zino.chart.css">
+        <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+        <script src="../../dist/js/zino.canvas.min.js"></script>
+        <script src="../../dist/js/zino.svg.min.js"></script>
+        <script src="../../dist/js/zino.chart.min.js"></script>
+        <style type="text/css">body{padding: 15px; font: normal 12px Arial, sans-serif;}</style>
+    </head>
+    <body>
+    <div id="chart"></div>
+
+<script type="text/javascript">
+$(function () {
+    $("#chart").zinoChart({
+        type: "spline",
+        width: 530,
+        height: 320,
+        tooltip: false,
+        categories: [{
+            'category': [
+                {'label': '2003'},
+                {'label': '2004'},
+                {'label': '2005'},
+                {'label': '2006'},
+                {'label': '2007'},
+                {'label': '2008'},
+                {'label': '2009'},
+                {'label': '2010'},
+                {'label': '2011'},
+                {'label': '2012'},
+                {'label': '2013'}
+            ]
+        }],
+        series: [{
+            'label': 'NY Knicks',
+            'color': '#3366CC',
+            'data': [
+                {'value': 1.0},
+                {'value': 2.0},
+                {'value': 2.3},
+                {'value': 3.0},
+                {'value': 2.1},
+                {'value': 2.9},
+                {'value': 3.0},
+                {'value': 3.9},
+                {'value': 4.5},
+                {'value': 5.1},
+                {'value': 5.0}
+            ]
+        }]
+    });
+});   
+</script>
+</body>
+</html>

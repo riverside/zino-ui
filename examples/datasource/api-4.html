@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>DataSource - Zino UI HTML5 framework</title>
+        <meta name="description" content="An abstract representation of a live set of data that presents a common predictable API for other objects to interact with.">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <link rel="stylesheet" href="../../dist/themes/silver/zino.core.css">
+        <link rel="stylesheet" href="../../dist/themes/silver/zino.datasource.css">
+        <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+        <script src="../../dist/js/zino.datasource.min.js"></script>
+        <style type="text/css">body{padding: 15px; font: normal 12px Arial, sans-serif;}</style>
+    </head>
+    <body>
+    <div id="datasource"></div>
+
+<div style="clear: left">
+    <input type="button" value="First" class="btnFirst" />
+    <input type="button" value="Prev" class="btnPrev" />
+    <input type="button" value="Next" class="btnNext" />
+    <input type="button" value="Last" class="btnLast" />
+    <input type="button" value="Go to" class="btnPage" />
+    <input type="text" value="2" class="txtPage" style="width: 35px" />
+    <input type="button" value="Per page" class="btnRowCount" />
+    <input type="text" value="2" class="txtRowCount" style="width: 35px" />
+</div>
+<div>
+    <input type="button" value="Sort by" class="btnSort" />
+    <select class="sort_field">
+        <option value="Name">Name</option>
+        <option value="Birthday">Age</option>
+        <option value="Pos">Position</option>
+        <option value="Num">Number</option>
+        <option value="Height">Height</option>
+        <option value="Weight">Weight</option>
+    </select>
+    <select class="sort_direction">
+        <option value="ASC">A-Z</option>
+        <option value="DESC">Z-A</option>
+    </select>
+</div>
+<div>
+    <input type="button" value="Filter by" class="btnFilter" />
+    <select class="filter_field">
+        <option value="Name">Name</option>
+        <option value="Birthday">Age</option>
+        <option value="Pos">Position</option>
+        <option value="Num" selected="selected">Number</option>
+        <option value="Height">Height</option>
+        <option value="Weight">Weight</option>
+    </select>
+    <select class="filter_operator">
+        <option value="lt">Less than</option>
+        <option value="lte">Less than or equal</option>
+        <option value="eq">Equal to</option>
+        <option value="neq">Not equal to</option>
+        <option value="gt">Greater than</option>
+        <option value="gte">Greater than or equal</option>
+        <option value="start">Start with</option>
+        <option value="end">End with</option>
+    </select>
+    <input type="text" value="18" class="filter_value" style="width: 55px" />
+</div>
+
+<style type="text/css">
+.ds-wrap{
+    float: left;
+    border: solid 1px #BB8C3C;
+    background-color: #F8EFD4;
+    border-radius: 3px;
+    margin: 0 10px 10px 0;
+    overflow: hidden;
+    padding: 5px;
+    width: 102px;
+}
+.ds-name{
+    font-weight: bold;
+    overflow: hidden;
+    height: 30px;
+    background-color: #EED592;
+    border-bottom: solid 1px #BB8C3C;
+    margin: 0 0 5px;
+}
+.ds-img{
+    border: none;
+    vertical-align: middle;
+    width: 100px;
+}
+.ds-item{
+    overflow: hidden;
+    padding: 2px 0;    
+}
+.ds-label{
+    display: inline-block;
+    float: left;    
+}
+.ds-value{
+    display: inline-block;
+    float: right;
+    font-weight: bold;
+}
+</style>
+
+<script type="text/javascript">
+$(function () {
+    var ds = zino.DataSource({
+        dataUrl: "../../request?plugin=datasource&type=json",
+        dataType: "json",
+        rowCount: 2,
+        fields: [
+            {name: "Picture", type: "string"},
+            {name: "Num", type: "numeric"},
+            {name: "Name", type: "string"},
+            {name: "Pos", type: "string"},
+            {name: "Height", type: "string"},
+            {name: "Weight", type: "numeric"},
+            {name: "Birthday", type: "date"},
+            {name: "Years", type: "numeric"}
+        ]
+    });
+    
+    ds.load(function (data) {
+        $("#datasource").html("");
+        var i, iCnt, $div;
+        
+        for (i = 0, iCnt = data.length; i < iCnt; i++) {
+            $div = $("<div>").addClass("ds-wrap").appendTo("#datasource");
+            $("<div>")
+                .addClass("ds-name")
+                .html(data[i].Num +'. '+ data[i].Name)
+                .appendTo($div);
+            $("<img>")
+                .attr("src", data[i].Picture)
+                .addClass("ds-img")
+                .appendTo($div);
+            $("<div>")
+                .addClass("ds-item")
+                .append('<span class="ds-label">Position:</span>')
+                .append('<span class="ds-value">' + data[i].Pos + '</span>')
+                .appendTo($div);
+            $("<div>")
+                .addClass("ds-item")
+                .append('<span class="ds-label">Born:</span>')
+                .append('<span class="ds-value">' + data[i].Birthday + '</span>')
+                .appendTo($div);
+            $("<div>")
+                .addClass("ds-item")
+                .append('<span class="ds-label">Height:</span>')
+                .append('<span class="ds-value">' + data[i].Height + '</span>')
+                .appendTo($div);
+            $("<div>")
+                .addClass("ds-item")
+                .append('<span class="ds-label">Weight:</span>')
+                .append('<span class="ds-value">' + data[i].Weight + '</span>')
+                .appendTo($div);
+        }
+    });
+    
+    $(document).on("click", ".btnFirst", function () {
+        if (ds.page() > 1) {
+            ds.page(1).refresh();
+        }
+    }).on("click", ".btnPrev", function () {
+        if (ds.page() > 1) {
+            ds.page(ds.page() - 1).refresh();
+        }
+    }).on("click", ".btnNext", function () {
+        if (ds.page() < ds.pages()) {
+            ds.page(ds.page() + 1).refresh();
+        }
+    }).on("click", ".btnLast", function () {
+        if (ds.page() < ds.pages()) {
+            ds.page(ds.pages()).refresh();
+        }
+    }).on("click", ".btnPage", function () {
+        ds.page($(".txtPage").val()).refresh();
+    }).on("click", ".btnRowCount", function () {
+        ds.rowCount($(".txtRowCount").val()).refresh();
+    }).on("click", ".btnSort", function () {
+        ds.sort([{
+            field: $(".sort_field").find("option:selected").val(), 
+            direction: $(".sort_direction").find("option:selected").val()
+        }]).refresh();
+    }).on("click", ".btnFilter", function () {
+        ds.filter([{
+            field: $(".filter_field").find("option:selected").val(),
+            operator: $(".filter_operator").find("option:selected").val(),
+            value: $(".filter_value").val()
+        }]).refresh();
+    });
+});
+</script>
+</body>
+</html>

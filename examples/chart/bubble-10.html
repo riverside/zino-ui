@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Chart - Zino UI HTML5 framework</title>
+        <meta name="description" content="Data visualization, pie & donuts charts.">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <link rel="stylesheet" href="../../dist/themes/silver/zino.core.css">
+        <link rel="stylesheet" href="../../dist/themes/silver/zino.chart.css">
+        <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+        <script src="../../dist/js/zino.canvas.min.js"></script>
+        <script src="../../dist/js/zino.svg.min.js"></script>
+        <script src="../../dist/js/zino.chart.min.js"></script>
+        <style type="text/css">body{padding: 15px; font: normal 12px Arial, sans-serif;}</style>
+    </head>
+    <body>
+    <div id="chart"></div>
+
+<script type="text/javascript">
+$(function () {
+    $("#chart").zinoChart({
+        type: "bubble",
+        width: 530,
+        height: 320,
+        tooltip: false,
+        categories: [{
+            'category': [
+                {'label': 0},
+                {'label': 5},
+                {'label': 10},
+                {'label': 15},
+                {'label': 20},
+                {'label': 25},
+                {'label': 30},
+                {'label': 35}
+            ]
+        }],
+        series: [{
+            'label': '2005',
+            'color': '#3366CC',
+            'data': [
+                {'x': 5, 'y': 18, 'z': 31},
+                {'x': 51, 'y': 12, 'z': 42},
+                {'x': 27, 'y': 25, 'z': 62},
+                {'x': 19, 'y': 9, 'z': 81},
+                {'x': 31, 'y': 20, 'z': 99},
+                {'x': 38, 'y': 13, 'z': 50},
+                {'x': 25, 'y': 42, 'z': 48},
+                {'x': 45, 'y': 21, 'z': 32}
+            ]
+        },{
+            'label': '2006',
+            'color': '#DC3912',
+            'data': [
+                {'x': 39, 'y': 27, 'z': 14},
+                {'x': 17, 'y': 19, 'z': 35},
+                {'x': 24, 'y': 40, 'z': 71},
+                {'x': 47, 'y': 13, 'z': 55},
+                {'x': 27, 'y': 31, 'z': 49},
+                {'x': 41, 'y': 12, 'z': 31},
+                {'x': 10, 'y': 28, 'z': 20},
+                {'x': 12, 'y': 35, 'z': 69}
+            ]
+        },{
+            'label': '2007',
+            'color': '#067A06',
+            'data': [
+                {'x': 26, 'y': 40, 'z': 58},
+                {'x': 19, 'y': 38, 'z': 82},
+                {'x': 40, 'y': 16, 'z': 17},
+                {'x': 31, 'y': 28, 'z': 64},
+                {'x': 17, 'y': 19, 'z': 35},
+                {'x': 20, 'y': 38, 'z': 49},
+                {'x': 39, 'y': 8, 'z': 50},
+                {'x': 9, 'y': 15, 'z': 31}
+            ]
+        }],
+        aseries: [
+            ['ID', 'Life Expectancy', 'Fertility Rate', 'Region', 'Population'],
+            ['CAN', 80.66, 1.67, 'North America', 33739900],
+            ['DEU', 79.84, 1.36, 'Europe', 81902307],
+            ['DNK', 78.6, 1.84, 'Europe', 5523095],
+            ['EGY', 72.73, 2.78, 'Middle East', 79716203],
+            ['GBR', 80.05, 2, 'Europe', 61801570],
+            ['IRN', 72.49, 1.7, 'Middle East', 73137148],
+            ['IRQ', 68.09, 4.77, 'Middle East', 31090763],
+            ['ISR', 81.55, 2.96, 'Middle East', 7485600],
+            ['RUS', 68.6, 1.54, 'Europe', 141850000],
+            ['USA', 78.09, 2.05, 'North America', 307007000]
+        ]
+    });
+});   
+</script>
+</body>
+</html>

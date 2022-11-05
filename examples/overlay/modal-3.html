@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Overlay - Zino UI HTML5 framework</title>
+        <meta name="description" content="Displays customizable dialog windows.">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <link rel="stylesheet" href="../../dist/themes/silver/zino.core.css">
+        <link rel="stylesheet" href="../../dist/themes/silver/zino.button.css">
+        <link rel="stylesheet" href="../../dist/themes/silver/zino.resizable.css">
+        <link rel="stylesheet" href="../../dist/themes/silver/zino.overlay.css">
+        <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+        <script src="../../dist/js/zino.position.min.js"></script>
+        <script src="../../dist/js/zino.draggable.min.js"></script>
+        <script src="../../dist/js/zino.resizable.min.js"></script>
+        <script src="../../dist/js/zino.button.min.js"></script>
+        <script src="../../dist/js/zino.overlay.min.js"></script>
+        <style type="text/css">body{padding: 15px; font: normal 12px Arial, sans-serif;}</style>
+    </head>
+    <body>
+    <div id="example_3" title="Example 3" style="display: none">Well done!</div>
+<input type="button" id="button_3" value="Open window" />
+
+<script type="text/javascript">
+$(function () {
+    $("#example_3").zinoOverlay({
+        modal: true,
+        width: 320,
+        height: 140,
+        autoOpen: true,
+        buttons: {
+            "OK": function (button) {
+                $(this).zinoOverlay("close");
+            }
+        },
+        toolbar: {
+            minimize: false,
+            maximize: false,
+            close: true
+        }
+    });
+    $("#button_3").click(function () {
+        $("#example_3").zinoOverlay("open");
+    });
+    $(":input[type='button']").zinoButton();
+});
+</script>
+</body>
+</html>

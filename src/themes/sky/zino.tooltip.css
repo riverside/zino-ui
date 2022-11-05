@@ -1,0 +1,30 @@
+/*!
+ * zino-ui v1.5 (https://github.com/riverside/zino-ui)
+ * Copyright 2012-2022 Dimitar Ivanov. All Rights Reserved.
+ */
+.zui-tooltip{
+	background: #E7F1FF; /* Old browsers */
+	background: -moz-linear-gradient(top,  #E7F1FF 0%, #CDE3FE 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#E7F1FF), color-stop(100%,#CDE3FE)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #E7F1FF 0%,#CDE3FE 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #E7F1FF 0%,#CDE3FE 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #E7F1FF 0%,#CDE3FE 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #E7F1FF 0%,#CDE3FE 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#E7F1FF', endColorstr='#CDE3FE',GradientType=0 ); /* IE6-9 */
+	
+	border: 1px solid #82B9FE;
+	color: #555;
+	display: none;
+	font: normal 12px Arial, sans-serif;
+	padding: 5px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: auto;
+	height: auto;
+	border-radius: 3px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	
+	max-width: 300px;
+}

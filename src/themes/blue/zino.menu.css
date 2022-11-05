@@ -1,0 +1,139 @@
+/*!
+ * zino-ui v1.5 (https://github.com/riverside/zino-ui)
+ * Copyright 2012-2022 Dimitar Ivanov. All Rights Reserved.
+ */
+.zui-menubar{
+	background: #60a4ee; /* Old browsers */
+	background: -moz-linear-gradient(top,  #60a4ee 0%, #5590d2 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#60a4ee), color-stop(100%,#5590d2)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #60a4ee 0%,#5590d2 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #60a4ee 0%,#5590d2 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #60a4ee 0%,#5590d2 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #60a4ee 0%,#5590d2 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#60a4ee', endColorstr='#5590d2',GradientType=0 ); /* IE6-9 */
+	border: 1px solid #509DFE;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	color: #fff;
+	font: normal 12px Arial, sans-serif;
+	list-style: none;
+	margin: 0 0 10px;
+	padding: 0;
+	position: relative;
+}
+.zui-menubar a:link, 
+.zui-menubar a:active,
+.zui-menubar a:visited,
+.zui-menubar a:hover,
+.zui-menubar a:focus{
+	color: #fff;
+	display: block;
+	margin: 0;
+	padding: 0 10px;
+	text-decoration: none;
+}
+.zui-menubar-horizontal{
+	background-color: #ccc;
+	height: 28px;
+	line-height: 28px;
+	width: 100%;
+}
+.zui-menubar-horizontal .zui-menubar-item{
+	float: left;
+}
+.zui-menubar-horizontal .zui-menu{
+	background-color: #B9D6F6;
+	border: solid 1px #509DFE;
+	border-top: none;
+	-webkit-border-radius: 0 0 3px 3px;
+	-moz-border-radius: 0 0 3px 3px;
+	border-radius: 0 0 3px 3px;
+	list-style: none;
+	margin: 0 0 0 -2px;
+	padding: 0;
+	position: absolute;
+	z-index: 9999;
+	color: #1E81FE;
+}
+.zui-menubar-horizontal .zui-menu-item{
+	float: none;
+}
+.zui-menubar-item{
+	border-left: solid 1px #77B1F0;
+	border-right: solid 1px #509DFE;
+}
+.zui-menubar-item:hover,
+.zui-menubar-item-hover{
+	background: #B9D6F6;
+	border-left: solid 1px #B9D6F6;
+	color: #1E81FE;
+}
+.zui-menu-item-hover{
+	background-color: #A2C9F3;	
+}
+.zui-menubar-item-disabled,
+.zui-menubar-item-disabled a:link,
+.zui-menubar-item-disabled a:active,
+.zui-menubar-item-disabled a:visited,
+.zui-menubar-item-disabled a:hover,
+.zui-menubar-item-disabled a:focus{
+	color: #A6A6A6;
+	cursor: default;
+}
+.zui-menubar-item:hover a,
+.zui-menubar-item-hover a,
+.zui-menu a:link, 
+.zui-menu a:active,
+.zui-menu a:visited,
+.zui-menu a:hover,
+.zui-menu a:focus{
+	color: #1E81FE;
+}
+
+/* Vertical */
+.zui-menubar-vertical{
+	background-color: #ccc;
+	line-height: 28px;
+	width: 180px;
+}
+.zui-menubar-vertical .zui-menubar-item{
+	border-left: none;
+	border-right: none;
+	border-top: solid 1px #8DBDF2;
+	border-bottom: solid 1px #509DFE;
+	position: relative;
+}
+.zui-menubar-vertical .zui-menubar-item:last-child{
+	border-bottom: none;
+}
+.zui-menubar-vertical .zui-menu{
+	background-color: #B9D6F6;
+	border: solid 1px #509DFE;
+	-webkit-border-radius: 0 3px 3px 0;
+	-moz-border-radius: 0 3px 3px 0;
+	border-radius: 0 3px 3px 0;
+	list-style: none;
+	margin: -2px 0 0 0;
+	padding: 0;
+	position: absolute;
+	z-index: 9999;
+	left: 180px;
+	top: 0;
+	width: 100%;
+}
+.zui-menubar-vertical .zui-menu-item{
+	border-top: solid 1px #F1F1F1;
+	border-bottom: solid 1px #509DFE;
+}
+.zui-menubar-vertical .zui-menu-item:last-child{
+	border-bottom: none;
+}
+.zui-menubar-vertical .zui-menu-item-hover{
+	background-color: #A2C9F3;
+	border-top: solid 1px #D0E3F9;
+}
+.zui-menubar-vertical .zui-menubar-item:hover,
+.zui-menubar-vertical .zui-menubar-item-hover{
+	border-top: solid 1px #E7F0FC;
+}
