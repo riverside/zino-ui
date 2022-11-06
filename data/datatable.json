@@ -1,0 +1,47 @@
+[
+  {
+    "Num": 7,
+    "Name": "Carmelo Anthony",
+    "Pos": "F",
+    "Height": "6-8",
+    "Weight": 230,
+    "Birthday": "05\/29\/1984",
+    "Years": "9"
+  },
+  {
+    "Num": 6,
+    "Name": "Tyson Chandler",
+    "Pos": "F",
+    "Height": "7-1",
+    "Weight": 240,
+    "Birthday": "10\/02\/1982",
+    "Years": "11"
+  },
+  {
+    "Num": 1,
+    "Name": "Amar'e Stoudemire",
+    "Pos": "F-C",
+    "Height": "6-11",
+    "Weight": 260,
+    "Birthday": "11\/16\/1982",
+    "Years": "10"
+  },
+  {
+    "Num": 8,
+    "Name": "J.R. Smith",
+    "Pos": "G",
+    "Height": "6-6",
+    "Weight": 220,
+    "Birthday": "09\/09\/1985",
+    "Years": "8"
+  },
+  {
+    "Num": 21,
+    "Name": "Iman Shumpert",
+    "Pos": "G",
+    "Height": "6-5",
+    "Weight": 220,
+    "Birthday": "06\/26\/1990",
+    "Years": "1"
+  }
+]

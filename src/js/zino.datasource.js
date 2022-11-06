@@ -225,10 +225,11 @@
 			case "xml":
 				$.get(this.opts.dataUrl).done(function (data) {
 					var cache = [],
-						$xml = $( $.parseXML(data) ),
+						//$xml = $( $.parseXML(data) ),
+                        $xml = $(data),
 						$root = $xml.find(self.opts.xmlRoot),
 						$record = $root.find(self.opts.xmlRecord);
-						
+
 					$record.each(function (i, el) {
 						cache.push({});
 						$(el).children().each(function (j, opt) {

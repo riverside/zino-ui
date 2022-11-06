@@ -1,0 +1,82 @@
+[
+  {
+    "Num": 7,
+    "Name": "Carmelo Anthony",
+    "Pos": "F",
+    "Height": "6-8",
+    "Weight": 230,
+    "Birthday": "05\/29\/1984",
+    "Years": "9",
+    "Picture": "https:\/\/i.cdn.turner.com\/nba\/nba\/media\/act_carmelo_anthony.jpg"
+  },
+  {
+    "Num": 6,
+    "Name": "Tyson Chandler",
+    "Pos": "F",
+    "Height": "7-1",
+    "Weight": 240,
+    "Birthday": "10\/02\/1982",
+    "Years": "11",
+    "Picture": "https:\/\/i.cdn.turner.com\/nba\/nba\/media\/act_tyson_chandler.jpg"
+  },
+  {
+    "Num": 1,
+    "Name": "Amar'e Stoudemire",
+    "Pos": "F-C",
+    "Height": "6-11",
+    "Weight": 260,
+    "Birthday": "11\/16\/1982",
+    "Years": "10",
+    "Picture": "https:\/\/i.cdn.turner.com\/nba\/nba\/media\/act_amare_stoudemire.jpg"
+  },
+  {
+    "Num": 8,
+    "Name": "J.R. Smith",
+    "Pos": "G",
+    "Height": "6-6",
+    "Weight": 220,
+    "Birthday": "09\/09\/1985",
+    "Years": "8",
+    "Picture": "https:\/\/i.cdn.turner.com\/nba\/nba\/media\/act_jr_smith.jpg"
+  },
+  {
+    "Num": 21,
+    "Name": "Iman Shumpert",
+    "Pos": "G",
+    "Height": "6-5",
+    "Weight": 220,
+    "Birthday": "06\/26\/1990",
+    "Years": "1",
+    "Picture": "https:\/\/i.cdn.turner.com\/nba\/nba\/media\/act_iman_shumpert.jpg"
+  },
+  {
+    "Num": 23,
+    "Name": "Marcus Camby",
+    "Pos": "C-F",
+    "Height": "6-11",
+    "Weight": 240,
+    "Birthday": "03\/22\/1974",
+    "Years": "17",
+    "Picture": "https:\/\/i.cdn.turner.com\/nba\/nba\/media\/act_marcus_camby.jpg"
+  },
+  {
+    "Num": 3,
+    "Name": "Kenyon Martin",
+    "Pos": "F",
+    "Height": "6-9",
+    "Weight": 240,
+    "Birthday": "12\/30\/1977",
+    "Years": "13",
+    "Picture": "https:\/\/i.cdn.turner.com\/nba\/nba\/media\/act_kenyon_martin.jpg"
+  },
+  {
+    "Num": 55,
+    "Name": "Quentin Richardson",
+    "Pos": "F",
+    "Height": "6-6",
+    "Weight": 228,
+    "Birthday": "04\/13\/1980",
+    "Years": "13",
+    "Picture": "https:\/\/i.cdn.turner.com\/nba\/nba\/media\/act_quentin_richardson.jpg"
+  }
+]

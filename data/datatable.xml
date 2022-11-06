@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<roster>
+    <player>
+        <Num>7</Num>
+        <Name>Carmelo Anthony</Name>
+        <Pos>F</Pos>
+        <Height>6-8</Height>
+        <Weight>230</Weight>
+        <Birthday>05/29/1984</Birthday>
+        <Years>9</Years>
+    </player>
+    <player>
+        <Num>6</Num>
+        <Name>Tyson Chandler</Name>
+        <Pos>F</Pos>
+        <Height>7-1</Height>
+        <Weight>240</Weight>
+        <Birthday>10/02/1982</Birthday>
+        <Years>11</Years>
+    </player>
+    <player>
+        <Num>1</Num>
+        <Name>Amar'e Stoudemire</Name>
+        <Pos>F-C</Pos>
+        <Height>6-11</Height>
+        <Weight>260</Weight>
+        <Birthday>11/16/1982</Birthday>
+        <Years>10</Years>
+    </player>
+    <player>
+        <Num>8</Num>
+        <Name>J.R. Smith</Name>
+        <Pos>G</Pos>
+        <Height>6-6</Height>
+        <Weight>220</Weight>
+        <Birthday>09/09/1985</Birthday>
+        <Years>8</Years>
+    </player>
+    <player>
+        <Num>21</Num>
+        <Name>Iman Shumpert</Name>
+        <Pos>G</Pos>
+        <Height>6-5</Height>
+        <Weight>220</Weight>
+        <Birthday>06/26/1990</Birthday>
+        <Years>1</Years>
+    </player>
+</roster>

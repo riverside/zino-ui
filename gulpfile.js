@@ -18,7 +18,7 @@ function maps() {
 }
 
 function themes() {
-    return src('src/maps/*.js')
+    return src('src/themes/**/*.css')
         .pipe(clean())
         .pipe(rename({suffix: '.min'}))
         .pipe(dest('dist/themes'));

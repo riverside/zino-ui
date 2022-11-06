@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<roster>
+    <player>
+        <Num>32</Num>
+        <Name>Blake Griffin</Name>
+        <Pos>F</Pos>
+        <Height>6-10</Height>
+        <Weight>251</Weight>
+        <Birthday>03/16/1989</Birthday>
+        <Years>3</Years>
+        <Picture>https://i.cdn.turner.com/nba/nba/media/act_blake_griffin.jpg</Picture>
+    </player>
+    <player>
+        <Num>5</Num>
+        <Name>Caron Butler</Name>
+        <Pos>F</Pos>
+        <Height>6-7</Height>
+        <Weight>228</Weight>
+        <Birthday>03/13/1980</Birthday>
+        <Years>11</Years>
+        <Picture>https://i.cdn.turner.com/nba/nba/media/act_caron_butler.jpg</Picture>
+    </player>
+    <player>
+        <Num>6</Num>
+        <Name>DeAndre Jordan</Name>
+        <Pos>C</Pos>
+        <Height>6-11</Height>
+        <Weight>265</Weight>
+        <Birthday>07/21/1988</Birthday>
+        <Years>5</Years>
+        <Picture>https://i.cdn.turner.com/nba/nba/media/act_deandre_jordan.jpg</Picture>
+    </player>
+    <player>
+        <Num>3</Num>
+        <Name>Chris Paul</Name>
+        <Pos>G</Pos>
+        <Height>6-0</Height>
+        <Weight>175</Weight>
+        <Birthday>05/06/1985</Birthday>
+        <Years>8</Years>
+        <Picture>https://i.cdn.turner.com/nba/nba/media/act_chris_paul.jpg</Picture>
+    </player>
+    <player>
+        <Num>11</Num>
+        <Name>Jamal Crawford</Name>
+        <Pos>G</Pos>
+        <Height>6-5</Height>
+        <Weight>200</Weight>
+        <Birthday>03/20/1980</Birthday>
+        <Years>13</Years>
+        <Picture>https://i.cdn.turner.com/nba/nba/media/act_jamal_crawford.jpg</Picture>
+    </player>
+    <player>
+        <Num>1</Num>
+        <Name>Chauncey Billups</Name>
+        <Pos>G</Pos>
+        <Height>6-3</Height>
+        <Weight>210</Weight>
+        <Birthday>09/25/1976</Birthday>
+        <Years>16</Years>
+        <Picture>https://i.cdn.turner.com/nba/nba/media/act_chauncey_billups.jpg</Picture>
+    </player>
+    <player>
+        <Num>12</Num>
+        <Name>Eric Bledsoe</Name>
+        <Pos>G</Pos>
+        <Height>6-1</Height>
+        <Weight>195</Weight>
+        <Birthday>12/09/1989</Birthday>
+        <Years>3</Years>
+        <Picture>https://i.cdn.turner.com/nba/nba/media/act_eric_bledsoe.jpg</Picture>
+    </player>
+    <player>
+        <Num>22</Num>
+        <Name>Matt Barnes</Name>
+        <Pos>F</Pos>
+        <Height>6-7</Height>
+        <Weight>226</Weight>
+        <Birthday>03/09/1980</Birthday>
+        <Years>10</Years>
+        <Picture>https://i.cdn.turner.com/nba/nba/media/act_matt_barnes.jpg</Picture>
+    </player>
+</roster>

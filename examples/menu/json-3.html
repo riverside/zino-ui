@@ -5,8 +5,8 @@
         <meta name="description" content="Creates nestable menus, accessible via keyboard.">
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width,initial-scale=1">
-        <link rel="stylesheet" href="../../dist/themes/silver/zino.core.css">
-        <link rel="stylesheet" href="../../dist/themes/silver/zino.menu.css">
+        <link rel="stylesheet" href="../../dist/themes/silver/zino.core.min.css">
+        <link rel="stylesheet" href="../../dist/themes/silver/zino.menu.min.css">
         <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
         <script src="../../dist/js/zino.datasource.min.js"></script>
         <script src="../../dist/js/zino.menu.min.js"></script>
@@ -18,7 +18,7 @@
 <script type="text/javascript">
 $(function () {
     var ds = zino.DataSource({
-        dataUrl: "../../request?plugin=menu&type=json",
+        dataUrl: "../../data/menu.json",
         dataType: "json"
     });
     $("#menu_json").zinoMenu({

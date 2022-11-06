@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<states>
+    <state>
+        <name>Alabama</name>
+    </state>
+    <state>
+        <name>Alaska</name>
+    </state>
+    <state>
+        <name>Arizona</name>
+    </state>
+    <state>
+        <name>Arkansas</name>
+    </state>
+    <state>
+        <name>California</name>
+    </state>
+    <state>
+        <name>Colorado</name>
+    </state>
+    <state>
+        <name>Connecticut</name>
+    </state>
+    <state>
+        <name>Delaware</name>
+    </state>
+    <state>
+        <name>District of Columbia</name>
+    </state>
+    <state>
+        <name>Florida</name>
+    </state>
+    <state>
+        <name>Georgia</name>
+    </state>
+    <state>
+        <name>Hawaii</name>
+    </state>
+    <state>
+        <name>Idaho</name>
+    </state>
+    <state>
+        <name>Illinois</name>
+    </state>
+    <state>
+        <name>Indiana</name>
+    </state>
+    <state>
+        <name>Iowa</name>
+    </state>
+    <state>
+        <name>Kansas</name>
+    </state>
+    <state>
+        <name>Kentucky</name>
+    </state>
+    <state>
+        <name>Louisiana</name>
+    </state>
+    <state>
+        <name>Maine</name>
+    </state>
+    <state>
+        <name>Maryland</name>
+    </state>
+    <state>
+        <name>Massachusetts</name>
+    </state>
+    <state>
+        <name>Michigan</name>
+    </state>
+    <state>
+        <name>Minnesota</name>
+    </state>
+    <state>
+        <name>Missouri</name>
+    </state>
+    <state>
+        <name>Montana</name>
+    </state>
+    <state>
+        <name>Nebraska</name>
+    </state>
+    <state>
+        <name>Nevada</name>
+    </state>
+    <state>
+        <name>New Hampshire</name>
+    </state>
+    <state>
+        <name>New Jersey</name>
+    </state>
+    <state>
+        <name>New Mexico</name>
+    </state>
+    <state>
+        <name>New York</name>
+    </state>
+    <state>
+        <name>North Carolina</name>
+    </state>
+    <state>
+        <name>North Dakota</name>
+    </state>
+    <state>
+        <name>Ohio</name>
+    </state>
+    <state>
+        <name>Oklahoma</name>
+    </state>
+    <state>
+        <name>Oregon</name>
+    </state>
+    <state>
+        <name>Pennsylvania</name>
+    </state>
+    <state>
+        <name>Rhode Island</name>
+    </state>
+    <state>
+        <name>South Carolina</name>
+    </state>
+    <state>
+        <name>South Dakota</name>
+    </state>
+    <state>
+        <name>Tennessee</name>
+    </state>
+    <state>
+        <name>Texas</name>
+    </state>
+    <state>
+        <name>Utah</name>
+    </state>
+    <state>
+        <name>Vermont</name>
+    </state>
+    <state>
+        <name>Virginia</name>
+    </state>
+    <state>
+        <name>Washington</name>
+    </state>
+    <state>
+        <name>West Virginia</name>
+    </state>
+    <state>
+        <name>Wisconsin</name>
+    </state>
+    <state>
+        <name>Wyoming</name>
+    </state>
+</states>

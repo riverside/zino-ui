@@ -1,0 +1,4 @@
+/*!
+ * zino-ui v1.5 (https://github.com/riverside/zino-ui)
+ * Copyright 2012-2022 Dimitar Ivanov. All Rights Reserved.
+ */.zui-tooltip{background:#444;background:-moz-linear-gradient(top,#444 0,#333 100%);background:-webkit-gradient(linear,left top,left bottom,color-stop(0,#444),color-stop(100%,#333));background:-webkit-linear-gradient(top,#444 0,#333 100%);background:-o-linear-gradient(top,#444 0,#333 100%);background:-ms-linear-gradient(top,#444 0,#333 100%);background:linear-gradient(to bottom,#444 0,#333 100%);border:1px solid #222;color:#fff;display:none;font:normal 12px Arial,sans-serif;padding:5px;position:absolute;top:0;left:0;width:auto;height:auto;border-radius:3px;-webkit-border-radius:3px;-moz-border-radius:3px;max-width:300px}

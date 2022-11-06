@@ -5,44 +5,46 @@
         <meta name="description" content="Custom select box replacement.">
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width,initial-scale=1">
-        <link rel="stylesheet" href="../../dist/themes/silver/zino.core.css">
-        <link rel="stylesheet" href="../../dist/themes/silver/zino.selectbox.css">
+        <link rel="stylesheet" href="../../dist/themes/silver/zino.core.min.css">
+        <link rel="stylesheet" href="../../dist/themes/silver/zino.selectbox.min.css">
         <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
         <script src="../../dist/js/zino.selectbox.min.js"></script>
         <style type="text/css">body{padding: 15px; font: normal 12px Arial, sans-serif;}</style>
     </head>
     <body>
     <div style="margin-bottom: 10px">
-    <select name="country_id" id="country_id" tabindex="1">
+    <select name="country" id="country" tabindex="1">
         <option value="">-- Select country --</option>
-    	<option value="1">USA</option>
-        <option value="2">France</option>
-        <option value="3">Spain</option>
-        <option value="4">Brazil</option>
-        <option value="5">Japan</option>
-        <option value="6">Bulgaria</option>
-        <option value="7">Greece</option>
-        <option value="8">Italy</option>
-        <option value="9">India</option>
+    	<option value="usa">USA</option>
+        <option value="france">France</option>
+        <option value="spain">Spain</option>
+        <option value="brazil">Brazil</option>
+        <option value="japan">Japan</option>
+        <option value="bulgaria">Bulgaria</option>
+        <option value="greece">Greece</option>
+        <option value="italy">Italy</option>
+        <option value="india">India</option>
     </select>
 </div>
 <div id="boxCity">
-	<select name="city_id" id="city_id" tabindex="2">
+	<select name="city" id="city" tabindex="2">
 		<option value="">-- Select city --</option>
 	</select>
 </div>
 <script type="text/javascript">
 $(function () {
-    $("#city_id").zinoSelectbox();
+    $("#city").zinoSelectbox();
     
-    $("#country_id").zinoSelectbox({
+    $("#country").zinoSelectbox({
         change: function (event, ui) {
-            $.get("../../request?plugin=selectbox", {
-                country_id: ui.value
-            }).done(function(data) {
-                $("#city_id").zinoSelectbox("destroy");
-                $("#boxCity").html(data);
-                $("#city_id").zinoSelectbox();
+            $.getJSON("../../data/selectbox/" + ui.value + ".json").done(function(data) {
+                var $city = $("#city");
+                $city.zinoSelectbox("destroy");
+                $city.find("option:not(:first)").remove();
+                for (var i = 0; i < data.length; i += 1) {
+                    $('<option>').val(data[i]).text(data[i]).appendTo($city);
+                }
+                $city.zinoSelectbox();
             });
         },
         effect: "slide"

@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<nba>
+    <item>
+        <id>30</id>
+        <parent_id>3</parent_id>
+        <text>New York Knicks</text>
+        <expanded>1</expanded>
+    </item>
+    <item>
+        <id>60</id>
+        <parent_id>6</parent_id>
+        <text>Oklahoma City Thunder</text>
+    </item>
+    <item>
+        <id>50</id>
+        <parent_id>5</parent_id>
+        <text>Charlotte Bobcats</text>
+    </item>
+    <item>
+        <id>71</id>
+        <parent_id>7</parent_id>
+        <text>Los Angeles Clippers</text>
+    </item>
+    <item>
+        <id>51</id>
+        <parent_id>5</parent_id>
+        <text>Washington Wizards</text>
+    </item>
+    <item>
+        <id>61</id>
+        <parent_id>6</parent_id>
+        <text>Portland Trailblazers</text>
+    </item>
+    <item>
+        <id>80</id>
+        <parent_id>8</parent_id>
+        <text>New Orleans Hornets</text>
+    </item>
+    <item>
+        <id>1</id>
+        <parent_id>0</parent_id>
+        <text>Eastern Conference</text>
+        <expanded>1</expanded>
+    </item>
+    <item>
+        <id>2</id>
+        <parent_id>0</parent_id>
+        <text>Western Conference</text>
+    </item>
+    <item>
+        <id>3</id>
+        <parent_id>1</parent_id>
+        <text>Atlantic Division</text>
+        <expanded>1</expanded>
+    </item>
+    <item>
+        <id>4</id>
+        <parent_id>1</parent_id>
+        <text>Central Division</text>
+    </item>
+    <item>
+        <id>5</id>
+        <parent_id>1</parent_id>
+        <text>Southeast Division</text>
+    </item>
+    <item>
+        <id>6</id>
+        <parent_id>2</parent_id>
+        <text>Northwest Division</text>
+    </item>
+    <item>
+        <id>7</id>
+        <parent_id>2</parent_id>
+        <text>Pasific Division</text>
+    </item>
+    <item>
+        <id>8</id>
+        <parent_id>2</parent_id>
+        <text>Southwest Division</text>
+    </item>
+    <item>
+        <id>300</id>
+        <parent_id>30</parent_id>
+        <text>Carmelo Anthony</text>
+    </item>
+    <item>
+        <id>301</id>
+        <parent_id>30</parent_id>
+        <text>J.R. Smith</text>
+        <selected>1</selected>
+    </item>
+    <item>
+        <id>302</id>
+        <parent_id>30</parent_id>
+        <text>Amare Stoudemire</text>
+    </item>
+    <item>
+        <id>600</id>
+        <parent_id>60</parent_id>
+        <text>Kevin Durant</text>
+    </item>
+    <item>
+        <id>601</id>
+        <parent_id>60</parent_id>
+        <text>Russell Westbrooke</text>
+    </item>
+    <item>
+        <id>602</id>
+        <parent_id>60</parent_id>
+        <text>Serge Ibaka</text>
+    </item>
+    <item>
+        <id>800</id>
+        <parent_id>80</parent_id>
+        <text>Anthony Davis</text>
+    </item>
+    <item>
+        <id>801</id>
+        <parent_id>80</parent_id>
+        <text>Austin Rivers</text>
+    </item>
+    <item>
+        <id>710</id>
+        <parent_id>71</parent_id>
+        <text>Chris Paul</text>
+    </item>
+    <item>
+        <id>711</id>
+        <parent_id>71</parent_id>
+        <text>DeAndre Jordan</text>
+    </item>
+    <item>
+        <id>712</id>
+        <parent_id>71</parent_id>
+        <text>Blake Griffin</text>
+    </item>
+    <item>
+        <id>510</id>
+        <parent_id>51</parent_id>
+        <text>John Wall</text>
+    </item>
+    <item>
+        <id>511</id>
+        <parent_id>51</parent_id>
+        <text>Nene</text>
+    </item>
+    <item>
+        <id>512</id>
+        <parent_id>51</parent_id>
+        <text>Bradley Beal</text>
+    </item>
+    <item>
+        <id>500</id>
+        <parent_id>50</parent_id>
+        <text>Michael Kidd-Gilchrist</text>
+    </item>
+    <item>
+        <id>610</id>
+        <parent_id>61</parent_id>
+        <text>LaMarcus Aldridge</text>
+    </item>
+    <item>
+        <id>611</id>
+        <parent_id>61</parent_id>
+        <text>Damian Lillard</text>
+    </item>
+</nba>
