@@ -1,83 +1,123 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <roster>
     <player>
-        <Num>32</Num>
-        <Name>Blake Griffin</Name>
-        <Pos>F</Pos>
-        <Height>6-10</Height>
-        <Weight>251</Weight>
-        <Birthday>03/16/1989</Birthday>
-        <Years>3</Years>
-        <Picture>https://i.cdn.turner.com/nba/nba/media/act_blake_griffin.jpg</Picture>
-    </player>
-    <player>
-        <Num>5</Num>
-        <Name>Caron Butler</Name>
-        <Pos>F</Pos>
-        <Height>6-7</Height>
-        <Weight>228</Weight>
-        <Birthday>03/13/1980</Birthday>
-        <Years>11</Years>
-        <Picture>https://i.cdn.turner.com/nba/nba/media/act_caron_butler.jpg</Picture>
-    </player>
-    <player>
-        <Num>6</Num>
-        <Name>DeAndre Jordan</Name>
-        <Pos>C</Pos>
-        <Height>6-11</Height>
-        <Weight>265</Weight>
-        <Birthday>07/21/1988</Birthday>
-        <Years>5</Years>
-        <Picture>https://i.cdn.turner.com/nba/nba/media/act_deandre_jordan.jpg</Picture>
-    </player>
-    <player>
-        <Num>3</Num>
-        <Name>Chris Paul</Name>
-        <Pos>G</Pos>
-        <Height>6-0</Height>
+        <Num>12</Num>
+        <Name>John Stockton</Name>
+        <Pos>PG</Pos>
+        <Height>6-1</Height>
         <Weight>175</Weight>
-        <Birthday>05/06/1985</Birthday>
-        <Years>8</Years>
-        <Picture>https://i.cdn.turner.com/nba/nba/media/act_chris_paul.jpg</Picture>
+        <Birthday>03/26/1962</Birthday>
+        <Years/>
+        <Picture>https://www.basketball-reference.com/req/202106291/images/players/stockjo01.jpg</Picture>
+    </player>
+    <player>
+        <Num>15</Num>
+        <Name>Magic Johnson</Name>
+        <Pos>PG</Pos>
+        <Height>6-9</Height>
+        <Weight>220</Weight>
+        <Birthday>08/14/1959</Birthday>
+        <Years/>
+        <Picture>https://www.basketball-reference.com/req/202106291/images/players/johnsma02.jpg</Picture>
+    </player>
+    <player>
+        <Num>9</Num>
+        <Name>Michael Jordan</Name>
+        <Pos>SG</Pos>
+        <Height>6-6</Height>
+        <Weight>198</Weight>
+        <Birthday>02/17/1963</Birthday>
+        <Years/>
+        <Picture>https://www.basketball-reference.com/req/202106291/images/players/jordami01.jpg</Picture>
+    </player>
+    <player>
+        <Num>10</Num>
+        <Name>Clyde Drexler</Name>
+        <Pos>SG</Pos>
+        <Height>6-77</Height>
+        <Weight>222</Weight>
+        <Birthday>06/22/1962</Birthday>
+        <Years/>
+        <Picture>https://www.basketball-reference.com/req/202106291/images/players/drexlcl01.jpg</Picture>
+    </player>
+    <player>
+        <Num>7</Num>
+        <Name>Larry Bird</Name>
+        <Pos>SF</Pos>
+        <Height>6-9</Height>
+        <Weight>220</Weight>
+        <Birthday>12/07/1956</Birthday>
+        <Years/>
+        <Picture>https://www.basketball-reference.com/req/202106291/images/players/birdla01.jpg</Picture>
+    </player>
+    <player>
+        <Num>8</Num>
+        <Name>Scottie Pippen</Name>
+        <Pos>SF</Pos>
+        <Height>6-8</Height>
+        <Weight>210</Weight>
+        <Birthday>09/25/1965</Birthday>
+        <Years/>
+        <Picture>https://www.basketball-reference.com/req/202106291/images/players/pippesc01.jpg</Picture>
+    </player>
+    <player>
+        <Num>13</Num>
+        <Name>Chris Mullin</Name>
+        <Pos>SF</Pos>
+        <Height>6-7</Height>
+        <Weight>215</Weight>
+        <Birthday>07/30/1963</Birthday>
+        <Years/>
+        <Picture>https://www.basketball-reference.com/req/202106291/images/players/mullich01.jpg</Picture>
     </player>
     <player>
         <Num>11</Num>
-        <Name>Jamal Crawford</Name>
-        <Pos>G</Pos>
-        <Height>6-5</Height>
-        <Weight>200</Weight>
-        <Birthday>03/20/1980</Birthday>
-        <Years>13</Years>
-        <Picture>https://i.cdn.turner.com/nba/nba/media/act_jamal_crawford.jpg</Picture>
+        <Name>Karl Malone</Name>
+        <Pos>PF</Pos>
+        <Height>6-9</Height>
+        <Weight>254</Weight>
+        <Birthday>07/24/1963</Birthday>
+        <Years/>
+        <Picture>https://www.basketball-reference.com/req/202106291/images/players/malonka01.jpg</Picture>
     </player>
     <player>
-        <Num>1</Num>
-        <Name>Chauncey Billups</Name>
-        <Pos>G</Pos>
-        <Height>6-3</Height>
-        <Weight>210</Weight>
-        <Birthday>09/25/1976</Birthday>
-        <Years>16</Years>
-        <Picture>https://i.cdn.turner.com/nba/nba/media/act_chauncey_billups.jpg</Picture>
+        <Num>14</Num>
+        <Name>Charles Barkley</Name>
+        <Pos>PF</Pos>
+        <Height>6-6</Height>
+        <Weight>250</Weight>
+        <Birthday>02/20/1963</Birthday>
+        <Years/>
+        <Picture>https://www.basketball-reference.com/req/202106291/images/players/barklch01.jpg</Picture>
     </player>
     <player>
-        <Num>12</Num>
-        <Name>Eric Bledsoe</Name>
-        <Pos>G</Pos>
-        <Height>6-1</Height>
-        <Weight>195</Weight>
-        <Birthday>12/09/1989</Birthday>
-        <Years>3</Years>
-        <Picture>https://i.cdn.turner.com/nba/nba/media/act_eric_bledsoe.jpg</Picture>
+        <Num>4</Num>
+        <Name>Christian Laettner</Name>
+        <Pos>PF</Pos>
+        <Height>6-11</Height>
+        <Weight>235</Weight>
+        <Birthday>08/17/1969</Birthday>
+        <Years/>
+        <Picture>https://www.basketball-reference.com/req/202106291/images/players/laettch01.jpg</Picture>
     </player>
     <player>
-        <Num>22</Num>
-        <Name>Matt Barnes</Name>
-        <Pos>F</Pos>
-        <Height>6-7</Height>
-        <Weight>226</Weight>
-        <Birthday>03/09/1980</Birthday>
-        <Years>10</Years>
-        <Picture>https://i.cdn.turner.com/nba/nba/media/act_matt_barnes.jpg</Picture>
+        <Num>5</Num>
+        <Name>David Robinson</Name>
+        <Pos>C</Pos>
+        <Height>7-1</Height>
+        <Weight>235</Weight>
+        <Birthday>08/06/1965</Birthday>
+        <Years/>
+        <Picture>https://www.basketball-reference.com/req/202106291/images/players/robinda01.jpg</Picture>
+    </player>
+    <player>
+        <Num>6</Num>
+        <Name>Patrick Ewing</Name>
+        <Pos>C</Pos>
+        <Height>7-0</Height>
+        <Weight>240</Weight>
+        <Birthday>08/05/1962</Birthday>
+        <Years/>
+        <Picture>https://www.basketball-reference.com/req/202106291/images/players/ewingpa01.jpg</Picture>
     </player>
 </roster>

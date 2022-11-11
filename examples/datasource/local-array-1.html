@@ -53,18 +53,22 @@
 }
 </style>
 
-<script type="text/javascript">
+<script>
 $(function () {
     var ds = zino.DataSource({
         data: [
-            {"Num":9,"Name":"Serge Ibaka","Pos":"F-C","Height":"6-10","Weight":235,"Birthday":"09/18/1989","Years":"4","Picture":"http://i.cdn.turner.com/nba/nba/media/act_serge_ibaka.jpg"},
-            {"Num":35,"Name":"Kevin Durant","Pos":"F","Height":"6-9","Weight":235,"Birthday":"09/29/1988","Years":"6","Picture":"http://i.cdn.turner.com/nba/nba/media/act_kevin_durant.jpg"},
-            {"Num":5,"Name":"Kendrick Perkins","Pos":"C","Height":"6-10","Weight":270,"Birthday":"10/10/1984","Years":"10","Picture":"http://i.cdn.turner.com/nba/nba/media/act_kendrick_perkins.jpg"},
-            {"Num":0,"Name":"Russell Westbrook","Pos":"G","Height":"6-3","Weight":187,"Birthday":"11/12/1988","Years":"5","Picture":"http://i.cdn.turner.com/nba/nba/media/act_russell_westbrook.jpg"},
-            {"Num":23,"Name":"Kevin Martin","Pos":"G","Height":"6-7","Weight":185,"Birthday":"02/01/1983","Years":"9","Picture":"http://i.cdn.turner.com/nba/nba/media/act_kevin_martin.jpg"},
-            {"Num":6,"Name":"Derek Fisher","Pos":"G","Height":"6-1","Weight":210,"Birthday":"08/09/1974","Years":"17","Picture":"http://i.cdn.turner.com/nba/nba/media/act_derek_fisher.jpg"},
-            {"Num":2,"Name":"Thabo Sefolosha","Pos":"G","Height":"6-7","Weight":215,"Birthday":"05/02/1984","Years":"7","Picture":"http://i.cdn.turner.com/nba/nba/media/act_thabo_sefolosha.jpg"},
-            {"Num":8,"Name":"Ronnie Brewer","Pos":"F","Height":"6-7","Weight":225,"Birthday":"03/20/1985","Years":"7","Picture":"http://i.cdn.turner.com/nba/nba/media/act_ronnie_brewer.jpg"}
+            {"Num": 12,"Name":"John Stockton","Pos":"PG","Height":"6-1","Weight": 175,"Birthday":"03/26/1962","Picture":"https://www.basketball-reference.com/req/202106291/images/players/stockjo01.jpg"},
+            {"Num": 15,"Name":"Magic Johnson","Pos":"PG","Height":"6-9","Weight": 220,"Birthday":"08/14/1959","Picture":"https://www.basketball-reference.com/req/202106291/images/players/johnsma02.jpg"},
+            {"Num": 9,"Name":"Michael Jordan","Pos":"SG","Height":"6-6","Weight": 198,"Birthday":"02/17/1963","Picture":"https://www.basketball-reference.com/req/202106291/images/players/jordami01.jpg"},
+            {"Num": 10,"Name":"Clyde Drexler","Pos":"SG","Height":"6-77","Weight": 222,"Birthday":"06/22/1962","Picture":"https://www.basketball-reference.com/req/202106291/images/players/drexlcl01.jpg"},
+            {"Num": 7,"Name":"Larry Bird","Pos":"SF","Height":"6-9","Weight": 220,"Birthday":"12/07/1956","Picture":"https://www.basketball-reference.com/req/202106291/images/players/birdla01.jpg"},
+            {"Num": 8,"Name":"Scottie Pippen","Pos":"SF","Height":"6-8","Weight": 210,"Birthday":"09/25/1965","Picture":"https://www.basketball-reference.com/req/202106291/images/players/pippesc01.jpg"},
+            {"Num": 13,"Name":"Chris Mullin","Pos":"SF","Height":"6-7","Weight": 215,"Birthday":"07/30/1963","Picture":"https://www.basketball-reference.com/req/202106291/images/players/mullich01.jpg"},
+            {"Num": 11,"Name":"Karl Malone","Pos":"PF","Height":"6-9","Weight": 254,"Birthday":"07/24/1963","Picture":"https://www.basketball-reference.com/req/202106291/images/players/malonka01.jpg"},
+            {"Num": 14,"Name":"Charles Barkley","Pos":"PF","Height":"6-6","Weight": 250,"Birthday":"02/20/1963","Picture":"https://www.basketball-reference.com/req/202106291/images/players/barklch01.jpg"},
+            {"Num": 4,"Name":"Christian Laettner","Pos":"PF","Height":"6-11","Weight": 235,"Birthday":"08/17/1969","Picture":"https://www.basketball-reference.com/req/202106291/images/players/laettch01.jpg"},
+            {"Num": 5,"Name":"David Robinson","Pos":"C","Height":"7-1","Weight": 235,"Birthday":"08/06/1965","Picture":"https://www.basketball-reference.com/req/202106291/images/players/robinda01.jpg"},
+            {"Num": 6,"Name":"Patrick Ewing","Pos":"C","Height":"7-0","Weight": 240,"Birthday":"08/05/1962","Picture":"https://www.basketball-reference.com/req/202106291/images/players/ewingpa01.jpg"}
         ],
         fields: [
             {name: "Picture", type: "string"},
@@ -73,8 +77,7 @@ $(function () {
             {name: "Pos", type: "string"},
             {name: "Height", type: "string"},
             {name: "Weight", type: "numeric"},
-            {name: "Birthday", type: "date"},
-            {name: "Years", type: "numeric"}
+            {name: "Birthday", type: "date"}
         ],
         change: function (event, ui) {
             //console.log(this, arguments);

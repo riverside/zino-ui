@@ -14,14 +14,14 @@
     <body>
     <div id="svg"></div>
 
-<script type="text/javascript">
+<script>
 $(function () {
     var api = zino.Svg({
         target: document.getElementById("svg"),
         width: 520,
         height: 320
     });
-    var a = api.a("http://twitter.com/zino_ui", "_blank").getShape();
+    var a = api.a("https://twitter.com/zino_ui", "_blank").getShape();
     api.text(20, 20, "Click here", false).attr({
         "fill": "#4295E8",
         "fontSize": "12px",
