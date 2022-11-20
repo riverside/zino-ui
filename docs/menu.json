@@ -1,0 +1,126 @@
+{
+  "charts": [
+    {
+      "uri": "chart/",
+      "text": "Chart"
+    }
+  ],
+  "maps": [
+    {
+      "uri": "chartmap/",
+      "text": "Chartmap"
+    }
+  ],
+  "libs": [
+    {
+      "uri": "canvas/",
+      "text": "Canvas"
+    },
+    {
+      "uri": "svg/",
+      "text": "SVG"
+    }
+  ],
+  "widgets": [
+    {
+      "uri": "accordion/",
+      "text": "Accordion"
+    },
+    {
+      "uri": "button/",
+      "text": "Button"
+    },
+    {
+      "uri": "buttonset/",
+      "text": "Buttonset"
+    },
+    {
+      "uri": "calendar/",
+      "text": "Calendar"
+    },
+    {
+      "uri": "checkbox/",
+      "text": "Checkbox"
+    },
+    {
+      "uri": "combobox/",
+      "text": "Combobox"
+    },
+    {
+      "uri": "datasource/",
+      "text": "Datasource"
+    },
+    {
+      "uri": "datatable/",
+      "text": "Datatable"
+    },
+    {
+      "uri": "draggable/",
+      "text": "Draggable"
+    },
+    {
+      "uri": "editable/",
+      "text": "Editable"
+    },
+    {
+      "uri": "menu/",
+      "text": "Menu"
+    },
+    {
+      "uri": "overlay/",
+      "text": "Overlay"
+    },
+    {
+      "uri": "progressbar/",
+      "text": "Progressbar"
+    },
+    {
+      "uri": "radiogroup/",
+      "text": "Radiogroup"
+    },
+    {
+      "uri": "rating/",
+      "text": "Rating"
+    },
+    {
+      "uri": "resizable/",
+      "text": "Resizable"
+    },
+    {
+      "uri": "selectbox/",
+      "text": "Selectbox"
+    },
+    {
+      "uri": "slider/",
+      "text": "Slider"
+    },
+    {
+      "uri": "slideshow/",
+      "text": "Slideshow"
+    },
+    {
+      "uri": "spinner/",
+      "text": "Spinner"
+    },
+    {
+      "uri": "splitter/",
+      "text": "Splitter"
+    },
+    {
+      "uri": "tabs/",
+      "text": "Tabs"
+    },
+    {
+      "uri": "tooltip/",
+      "text": "Tooltip"
+    },
+    {
+      "uri": "treeview/",
+      "text": "Treeview"
+    },
+    {
+      "uri": "upload/",
+      "text": "Upload"
+    }
+  ]
+}

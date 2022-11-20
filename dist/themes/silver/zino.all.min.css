@@ -19,7 +19,32 @@
  *//*!
  * zino-ui v1.5 (https://github.com/riverside/zino-ui)
  * Copyright 2012-2022 Dimitar Ivanov. All Rights Reserved.
- */.zui-chart-bar .zui-chart-canvas rect{animation:animX 1s ease 0s 1}.zui-chart-column .zui-chart-canvas rect{animation:animY 1s ease 0s 1}.zui-chart-donut .zui-chart-canvas,.zui-chart-pie .zui-chart-canvas{animation:animSpin 1s ease 0s 1}.zui-chart-radar .zui-chart-area,.zui-chart-rose .zui-chart-area{animation:animScale 1.2s ease 0s 1}.zui-chart-candlestick .zui-chart-candle,.zui-chart-ohlc .zui-chart-item{animation:animFrames 1.5s ease 0s 1}.zui-chart-area .zui-chart-canvas path,.zui-chart-line .zui-chart-canvas path,.zui-chart-polar .zui-chart-area path,.zui-chart-spline .zui-chart-canvas path,.zui-chart-stepline .zui-chart-canvas path{animation:animLine 5s ease 0s 1}.zui-chart-area .zui-chart-canvas circle,.zui-chart-bubble .zui-chart-circles circle,.zui-chart-line .zui-chart-canvas circle,.zui-chart-polar .zui-chart-points circle,.zui-chart-scatter .zui-chart-markers circle,.zui-chart-spline .zui-chart-points circle,.zui-chart-stepline .zui-chart-canvas circle{animation:animRadius .7s ease 0s 1}@keyframes animLine{0%{stroke-dashoffset:3000}100%{stroke-dashoffset:0}}@keyframes animFrames{0%{opacity:0;transform:translate(0,-100%)}100%{opacity:1;transform:translate(0,0)}}@keyframes animScale{0%{opacity:0;transform-origin:center;transform:scale(0)}100%{opacity:1;transform-origin:center;transform:scale(1)}}@keyframes animSpin{0%{opacity:0;transform-origin:center;transform:rotate(180deg)}100%{opacity:1;transform-origin:center;transform:rotate(0)}}/*!
+ */.zui-chart-bar .zui-chart-canvas rect{animation:animX 1s ease 0s 1}.zui-chart-column .zui-chart-canvas rect{animation:animY 1s ease 0s 1}.zui-chart-donut .zui-chart-canvas,.zui-chart-pie .zui-chart-canvas{animation:animSpin 1s ease 0s 1}.zui-chart-radar .zui-chart-area,.zui-chart-rose .zui-chart-area{animation:animScale 1.2s ease 0s 1}.zui-chart-candlestick .zui-chart-candle,.zui-chart-ohlc .zui-chart-item{animation:animFrames 1.5s ease 0s 1}.zui-chart-area .zui-chart-canvas path,.zui-chart-line .zui-chart-canvas path,.zui-chart-polar .zui-chart-area path,.zui-chart-spline .zui-chart-canvas path,.zui-chart-stepline .zui-chart-canvas path{animation:animLine 5s ease 0s 1}.zui-chart-area .zui-chart-canvas circle,.zui-chart-bubble .zui-chart-circles circle,.zui-chart-line .zui-chart-canvas circle,.zui-chart-polar .zui-chart-points circle,.zui-chart-scatter .zui-chart-markers circle,.zui-chart-spline .zui-chart-points circle,.zui-chart-stepline .zui-chart-canvas circle{animation:animRadius .7s ease 0s 1}@keyframes animLine{0%{stroke-dashoffset:3000}100%{stroke-dashoffset:0}}@keyframes animFrames{0%{opacity:0;transform:translate(0,-100%)}100%{opacity:1;transform:translate(0,0)}}@keyframes animScale{0%{opacity:0;transform-origin:center;transform:scale(0)}100%{opacity:1;transform-origin:center;transform:scale(1)}}@keyframes animSpin{0%{opacity:0;transform-origin:center;transform:rotate(180deg)}100%{opacity:1;transform-origin:center;transform:rotate(0)}}
+@keyframes animX{
+    0% {
+        x: -100%;
+    }
+    100% {
+        x: attr(x);
+    }
+}
+@keyframes animY{
+    0% {
+        y: 100%;
+    }
+    100% {
+        y: attr(y);
+    }
+}
+@keyframes animRadius{
+    0% {
+        r: 0;
+    }
+    100% {
+        r: auto;
+    }
+}
+/*!
  * zino-ui v1.5 (https://github.com/riverside/zino-ui)
  * Copyright 2012-2022 Dimitar Ivanov. All Rights Reserved.
  *//*!

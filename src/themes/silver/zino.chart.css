@@ -38,36 +38,12 @@
     animation: animRadius 0.7s ease 0s 1;
 }
 /* Keyframes */
-@keyframes animX{
-    0% {
-        x: -100%;
-    }
-    100% {
-        x: attr(x);
-    }
-}
-@keyframes animY{
-    0% {
-        y: 100%;
-    }
-    100% {
-        y: attr(y);
-    }
-}
 @keyframes animLine{
     0% {
         stroke-dashoffset: 3000;
     }
     100% {
         stroke-dashoffset: 0;
-    }
-}
-@keyframes animRadius{
-    0% {
-        r: 0;
-    }
-    100% {
-        r: auto;
     }
 }
 @keyframes animFrames{
@@ -104,3 +80,29 @@
         transform: rotate(0);
     }
 }
+/* clean-css ignore:start */
+@keyframes animX{
+    0% {
+        x: -100%;
+    }
+    100% {
+        x: attr(x);
+    }
+}
+@keyframes animY{
+    0% {
+        y: 100%;
+    }
+    100% {
+        y: attr(y);
+    }
+}
+@keyframes animRadius{
+    0% {
+        r: 0;
+    }
+    100% {
+        r: auto;
+    }
+}
+/* clean-css ignore:end */
