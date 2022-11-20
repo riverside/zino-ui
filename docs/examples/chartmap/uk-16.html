@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>ChartMap - Zino UI HTML5 framework</title>
+        <meta name="description" content="Interactive HTML5 maps to plot geographical data.">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <link rel="stylesheet" href="../../../dist/themes/silver/zino.core.min.css">
+        <link rel="stylesheet" href="../../../dist/themes/silver/zino.chartmap.min.css">
+        <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+        <script src="../../../dist/js/zino.svg.min.js"></script>
+        <script src="../../../dist/js/zino.chartmap.min.js"></script>
+        <style type="text/css">body{padding: 15px; font: normal 12px Arial, sans-serif;}</style>
+    </head>
+    <body>
+    <div id="chartmap"></div>
+
+<script type="text/javascript" src="../../../dist/maps/GB.min.js"></script>
+<script>
+$(function () {
+    $("#chartmap").zinoChartmap({
+        map: "GB",
+        width: 530,
+        height: 320,
+        zoom: 1.8,
+        fill: "#00247D",
+        background: "#B1B1B1",
+        palette: false,
+        provinces: [
+            {id: 'GBR-2777', fill: '#CF142B'},
+            {id: 'GBR-2037', fill: '#CF142B'},
+            {id: 'GBR-2751', fill: '#CF142B'},
+            {id: 'GBR-2750', fill: '#CF142B'},
+            {id: 'GBR-2776', fill: '#CF142B'},
+            {id: 'GBR-2039', fill: '#CF142B'},
+            {id: 'GBR-2757', fill: '#CF142B'},
+            {id: 'GBR-2051', fill: '#CF142B'},
+            {id: 'GBR-2035', fill: '#CF142B'},
+            {id: 'GBR-2780', fill: '#CF142B'},
+            {id: 'GBR-2758', fill: '#CF142B'},
+            {id: 'GBR-2049', fill: '#CF142B'},
+            {id: 'GBR-2756', fill: '#CF142B'},
+            {id: 'GBR-2059', fill: '#CF142B'},
+            {id: 'GBR-2782', fill: '#CF142B'},
+            {id: 'GBR-2052', fill: '#CF142B'},
+            {id: 'GBR-2036', fill: '#CF142B'},
+            {id: 'GBR-2759', fill: '#CF142B'},
+            {id: 'GBR-2050', fill: '#CF142B'},
+            {id: 'GBR-2120', fill: '#CF142B'},
+            {id: 'GBR-2032', fill: '#CF142B'},
+            {id: 'GBR-2033', fill: '#CF142B'},
+            {id: 'GBR-2028', fill: '#CF142B'},
+            {id: 'GBR-2030', fill: '#CF142B'},
+            {id: 'GBR-2031', fill: '#CF142B'},
+            {id: 'GBR-2029', fill: '#CF142B'},
+            {id: 'GBR-2026', fill: '#CF142B'},
+            {id: 'GBR-2138', fill: '#CF142B'},
+            {id: 'GBR-2140', fill: '#CF142B'},
+            {id: 'GBR-2091', fill: '#CF142B'},
+            {id: 'GBR-2092', fill: '#CF142B'},
+            {id: 'GBR-2084', fill: '#CF142B'},
+            {id: 'GBR-2034', fill: '#CF142B'},
+            {id: 'GBR-2097', fill: '#CF142B'},
+            {id: 'GBR-2027', fill: '#CF142B'},
+            {id: 'GBR-2096', fill: '#CF142B'},
+            {id: 'GBR-2778', fill: '#CF142B'},
+            {id: 'GBR-2124', fill: '#CF142B'},
+            {id: 'GBR-2779', fill: '#FFFFFF'},
+            {id: 'GBR-2775', fill: '#FFFFFF'},
+            {id: 'GBR-2007', fill: '#FFFFFF'},
+            {id: 'GBR-2132', fill: '#FFFFFF'},
+            {id: 'GBR-2047', fill: '#FFFFFF'},
+            {id: 'GBR-2046', fill: '#FFFFFF'},
+            {id: 'GBR-2010', fill: '#FFFFFF'},
+            {id: 'GBR-2045', fill: '#FFFFFF'},
+            {id: 'GBR-2043', fill: '#FFFFFF'},
+            {id: 'GBR-2054', fill: '#FFFFFF'},
+            {id: 'GBR-2002', fill: '#FFFFFF'},
+            {id: 'GBR-2749', fill: '#FFFFFF'},
+            {id: 'GBR-2040', fill: '#FFFFFF'},
+            {id: 'GBR-2121', fill: '#FFFFFF'},
+            {id: 'GBR-2755', fill: '#FFFFFF'},
+            {id: 'GBR-2764', fill: '#FFFFFF'},
+            {id: 'GBR-2109', fill: '#FFFFFF'},
+            {id: 'GBR-2774', fill: '#FFFFFF'},
+            {id: 'GBR-2781', fill: '#FFFFFF'},
+            {id: 'GBR-2093', fill: '#FFFFFF'},
+            {id: 'GBR-2094', fill: '#FFFFFF'},
+            {id: 'GBR-2135', fill: '#FFFFFF'},
+            {id: 'GBR-2089', fill: '#FFFFFF'},
+            {id: 'GBR-2088', fill: '#FFFFFF'},
+            {id: 'GBR-2090', fill: '#FFFFFF'},
+            {id: 'GBR-2082', fill: '#FFFFFF'},
+            {id: 'GBR-2094', fill: '#FFFFFF'},
+            {id: 'GBR-2095', fill: '#FFFFFF'},
+            {id: 'GBR-2098', fill: '#FFFFFF'},
+            {id: 'GBR-2082', fill: '#FFFFFF'},
+            {id: 'GBR-2761', fill: '#FFFFFF'},
+            {id: 'GBR-2044', fill: '#FFFFFF'},
+            {id: 'GBR-2057', fill: '#FFFFFF'},
+            {id: 'GBR-2122', fill: '#FFFFFF'},
+            {id: 'GBR-2123', fill: '#FFFFFF'},
+            {id: 'GBR-2055', fill: '#FFFFFF'},
+            {id: 'GBR-2748', fill: '#FFFFFF'},
+            {id: 'GBR-2001', fill: '#FFFFFF'},
+            {id: 'GBR-2003', fill: '#FFFFFF'},
+            {id: 'GBR-2004', fill: '#FFFFFF'},
+            {id: 'GBR-2025', fill: '#FFFFFF'},
+            {id: 'GBR-2015', fill: '#FFFFFF'},
+            {id: 'GBR-2022', fill: '#FFFFFF'},
+            {id: 'GBR-2023', fill: '#FFFFFF'},
+            {id: 'GBR-2024', fill: '#FFFFFF'},
+            {id: 'GBR-2009', fill: '#FFFFFF'},
+            {id: 'GBR-2139', fill: '#FFFFFF'}
+        ]
+    });
+});
+</script>
+</body>
+</html>

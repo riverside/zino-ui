@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Overlay - Zino UI HTML5 framework</title>
+        <meta name="description" content="Displays customizable dialog windows.">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <link rel="stylesheet" href="../../../dist/themes/silver/zino.core.min.css">
+        <link rel="stylesheet" href="../../../dist/themes/silver/zino.button.min.css">
+        <link rel="stylesheet" href="../../../dist/themes/silver/zino.resizable.min.css">
+        <link rel="stylesheet" href="../../../dist/themes/silver/zino.overlay.min.css">
+        <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+        <script src="../../../dist/js/zino.position.min.js"></script>
+        <script src="../../../dist/js/zino.draggable.min.js"></script>
+        <script src="../../../dist/js/zino.resizable.min.js"></script>
+        <script src="../../../dist/js/zino.button.min.js"></script>
+        <script src="../../../dist/js/zino.overlay.min.js"></script>
+        <style type="text/css">body{padding: 15px; font: normal 12px Arial, sans-serif;}</style>
+    </head>
+    <body>
+    <div id="example_4" title="Example 4" style="display: none">How many Grammys did Amy Winehouse win?</div>
+<input type="button" id="button_4" value="Open window" />
+
+<script>
+$(function () {
+    $("#example_4").zinoOverlay({
+        modal: true,
+        width: 320,
+        height: 140,
+        autoOpen: true,
+        close: function (event, ui) {
+            var answer = $(this).data("answer"),
+            result = answer == 5 ? "That's correct" : "Incorrect";
+            alert("Your answer is: " + answer + "n" + result);
+        },
+        buttons: {
+            "Four": function (button) {
+                $(this).data("answer", 4).zinoOverlay("close");
+            },
+            "Five": function (button) {
+                $(this).data("answer", 5).zinoOverlay("close");
+            },
+            "Six": function (button) {
+                $(this).data("answer", 6).zinoOverlay("close");
+            },
+            "Seven": function (button) {
+                $(this).data("answer", 7).zinoOverlay("close");
+            }
+        }
+    });
+    $("#button_4").click(function () {
+        $("#example_4").zinoOverlay("open");
+    });
+    $(":input[type='button']").zinoButton();
+});
+</script>
+</body>
+</html>

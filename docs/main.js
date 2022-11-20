@@ -15,8 +15,7 @@
     }
 
     function loadMenu() {
-        const path = menu.dataset.path || "../";
-        fetch(path + "./menu.json").then(function(response) {
+        fetch("../../menu.json").then(function(response) {
             return response.json();
         }).then(function(data) {
             renderMenu(data);
@@ -30,16 +29,12 @@
         let heading;
         let aside;
         let regex;
-        const path = menu.dataset.path || "../";
 
         aside = document.createElement("aside");
         ul = document.createElement("ul");
         li = document.createElement("li");
-        if (path === "./") {
-            li.className = "active";
-        }
         a = document.createElement("a");
-        a.href = path;
+        a.href = "../../";
         a.innerHTML = "&laquo; Back to Home";
         li.appendChild(a);
         ul.appendChild(li);
@@ -58,7 +53,7 @@
                     li.className = "active";
                 }
                 a = document.createElement("a");
-                a.href = path + item.uri;
+                a.href = "../../demos/" + item.uri;
                 a.textContent = item.text;
 
                 li.appendChild(a);

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Tooltip - Zino UI HTML5 framework</title>
+        <meta name="description" content="Shows additional information for any element on hover or focus.">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <link rel="stylesheet" href="../../../dist/themes/silver/zino.core.min.css">
+        <link rel="stylesheet" href="../../../dist/themes/silver/zino.tooltip.min.css">
+        <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+        <script src="../../../dist/js/zino.tooltip.min.js"></script>
+        <style type="text/css">body{padding: 15px; font: normal 12px Arial, sans-serif;}</style>
+    </head>
+    <body>
+    <a href="#" title="Promisses happens this fall. Good buy." id="example_1">Simple anchor link</a>
+
+<script>
+$(function () {
+    $("#example_1").zinoTooltip({
+        follow: true,
+        opacity: 0.8,
+        offset: [5, 10],
+        showAfter: 300,
+        hideAfter: 300
+    });
+});
+</script>
+</body>
+</html>

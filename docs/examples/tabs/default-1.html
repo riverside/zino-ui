@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Tabs - Zino UI HTML5 framework</title>
+        <meta name="description" content="Transforms a set of container elements into a tab structure.">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <link rel="stylesheet" href="../../../dist/themes/silver/zino.core.min.css">
+        <link rel="stylesheet" href="../../../dist/themes/silver/zino.tabs.min.css">
+        <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+        <script src="../../../dist/js/zino.tabs.min.js"></script>
+        <style type="text/css">body{padding: 15px; font: normal 12px Arial, sans-serif;}</style>
+    </head>
+    <body>
+    <div id="tabs">
+    <ul>
+    	<li><a href="#tabs-1">Tab 1</a></li>
+		<li><a href="#tabs-2">Tab 2</a></li>
+		<li><a href="#tabs-3">Tab 3</a></li>
+	</ul>
+	<div id="tabs-1">If a simple event name such as "click" is provided, all events of that type (both direct and delegated) are removed from the elements in the jQuery set. When writing code that will be used as a plugin, or simply when working with a large code base, best practice is to attach and remove events using namespaces so that the code will not inadvertently remove event handlers attached by other code. All events of all types in a specific namespace can be removed from an element by providing just a namespace, such as ".myPlugin". At minimum, either a namespace or event name must be provided.</div>
+	<div id="tabs-2">The .on() method attaches event handlers to the currently selected set of elements in the jQuery object. As of jQuery 1.7, the .on() method provides all functionality required for attaching event handlers. For equivalents to older jQuery event methods, see .bind(), .delegate(), and .live(). To remove events bound with .on(), see .off(). To attach an event that runs only once and then removes itself, see .one(). To remove specific delegated event handlers, provide a selector argument. The selector string must exactly match the one passed to .on() when the event handler was attached. To remove all delegated events from an element without removing non-delegated events, use the special value "**". Any event names can be used for the events argument. jQuery will pass through the browser's standard JavaScript event types, calling the handler function when the browser generates events due to user actions such as click. In addition, the .trigger() method can trigger both standard browser event names and custom event names to call attached handlers.</div>
+    <div id="tabs-3">In the area of graphical user interfaces (GUI), a tabbed document interface (TDI) or a Tab is one that allows multiple documents to be contained within a single window, using tabs as a navigational widget for switching between sets of documents. It is an interface style most commonly associated with web browsers, web applications, text editors, and preference panes.</div>
+</div>
+
+<script>
+$(function () {
+    $("#tabs").zinoTabs();
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Buttonset - Zino UI HTML5 framework</title>
+        <meta name="description" content="Enhances a form with themable buttonsets.">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <link rel="stylesheet" href="../../../dist/themes/silver/zino.core.min.css">
+        <link rel="stylesheet" href="../../../dist/themes/silver/zino.buttonset.min.css">
+        <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+        <script src="../../../dist/js/zino.buttonset.min.js"></script>
+        <style type="text/css">body{padding: 15px; font: normal 12px Arial, sans-serif;}</style>
+    </head>
+    <body>
+    <form action="" method="get">
+    <input type="checkbox" name="lang[]" id="javascript" value="1" tabindex="9" />
+	<label for="javascript">Javascript</label>
+	<input type="checkbox" name="lang[]" id="nodejs" value="2" checked="checked" tabindex="10" />
+	<label for="nodejs">Node.js</label>
+	<input type="checkbox" name="lang[]" id="nosql" value="3" tabindex="11" />
+	<label for="nosql">noSQL</label>
+	<input type="checkbox" name="lang[]" id="json" value="4" tabindex="12" disabled="disabled" />
+	<label for="json">JSON</label>
+</form>
+
+<script>
+$(function () {
+    $("input[name='lang[]']").zinoButtonset();
+});
+</script>
+</body>
+</html>

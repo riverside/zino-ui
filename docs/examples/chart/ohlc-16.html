@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Chart - Zino UI HTML5 framework</title>
+        <meta name="description" content="Data visualization, pie & donuts charts.">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <link rel="stylesheet" href="../../../dist/themes/silver/zino.core.min.css">
+        <link rel="stylesheet" href="../../../dist/themes/silver/zino.chart.min.css">
+        <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+        <script src="../../../dist/js/zino.canvas.min.js"></script>
+        <script src="../../../dist/js/zino.svg.min.js"></script>
+        <script src="../../../dist/js/zino.chart.min.js"></script>
+        <style type="text/css">body{padding: 15px; font: normal 12px Arial, sans-serif;}</style>
+    </head>
+    <body>
+    <div id="chart"></div>
+
+<script>
+$(function () {
+    $("#chart").zinoChart({
+        type: "ohlc",
+        width: 530,
+        height: 320,
+        categories: [{
+            'category': [
+                {'label': 'Jan'},
+                {'label': 'Feb'},
+                {'label': 'Mar'},
+                {'label': 'Apr'},
+                {'label': 'May'},
+                {'label': 'Jun'},
+                {'label': 'Jul'},
+                {'label': 'Aug'},
+                {'label': 'Sep'},
+                {'label': 'Oct'},
+                {'label': 'Nov'},
+                {'label': 'Dec'}
+            ]
+        }],
+        series: [
+            {
+                "label":"Jan",
+                "open":438.00,
+            	"high":438.18,
+            	"low":429.98,
+            	"close":430.47
+            },{
+            	"label":"Feb",
+            	"open":427.80,
+            	"high":428.20,
+            	"low":419.00,
+            	"close":420.05
+            },{
+            	"label":"Mar",
+            	"open":421.48,
+            	"high":435.19,
+            	"low":420.75,
+            	"close":431.14
+            },{
+            	"label":"Apr",
+            	"open":434.51,
+            	"high":435.25,
+            	"low":424.43,
+            	"close":425.66
+            },
+            {
+            	"label":"May",
+            	"open":424.50,
+            	"high":432.01,
+            	"low":421.06,
+            	"close":430.58
+            },
+            {
+            	"label":"Jun",
+            	"open":429.80,
+            	"high":435.43,
+            	"low":428.61,
+            	"close":431.72
+            },{
+            	"label":"Jul",
+            	"open":429.75,
+            	"high":439.01,
+            	"low":425.14,
+            	"close":437.87
+            },{
+            	"label":"Aug",
+            	"open":435.60,
+            	"high":438.88,
+            	"low":427.57,
+            	"close":428.43
+            },{
+            	"label":"Sep",
+            	"open":428.45,
+            	"high":434.50,
+            	"low":425.36,
+            	"close":428.35
+            },{
+            	"label":"Oct",
+            	"open":432.83,
+            	"high":434.64,
+            	"low":430.45,
+            	"close":432.50
+            },{
+            	"label":"Nov",
+            	"open":437.93,
+            	"high":444.23,
+            	"low":437.25,
+            	"close":443.66
+            },{
+            	"label":"Dec",
+            	"open":441.45,
+            	"high":457.46,
+            	"low":441.20,
+            	"close":455.72
+            }
+        ]
+    });
+});   
+</script>
+</body>
+</html>

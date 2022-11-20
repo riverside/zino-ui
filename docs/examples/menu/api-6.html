@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Menu - Zino UI HTML5 framework</title>
+        <meta name="description" content="Creates nestable menus, accessible via keyboard.">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <link rel="stylesheet" href="../../../dist/themes/silver/zino.core.min.css">
+        <link rel="stylesheet" href="../../../dist/themes/silver/zino.menu.min.css">
+        <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+        <script src="../../../dist/js/zino.datasource.min.js"></script>
+        <script src="../../../dist/js/zino.menu.min.js"></script>
+        <style type="text/css">body{padding: 15px; font: normal 12px Arial, sans-serif;}</style>
+    </head>
+    <body>
+    <div id="menu"></div>
+
+<div>
+    <input type="button" value="Open" class="btnOpen" />
+    <input type="button" value="Close" class="btnClose" />
+    <input type="button" value="Enable" class="btnEnable" />
+    <input type="button" value="Disable" class="btnDisable" />
+    <input type="text" value="1" name="index" style="width: 30px; text-align: right" />
+</div>
+
+<script>
+$(function () {
+    var ds = zino.DataSource({
+        dataUrl: "../../data/menu.json",
+        dataType: "json"
+    });
+    $("#menu").zinoMenu({
+        dataSource: ds,
+        orientation: "vertical"
+    });
+    $(document).on("click", ".btnOpen", function () {
+        var index = parseInt($("input[name='index']").val(), 10);
+        $("#menu").zinoMenu("open", index);
+    }).on("click", ".btnClose", function () {
+        var index = parseInt($("input[name='index']").val(), 10);
+        $("#menu").zinoMenu("close", index);
+    }).on("click", ".btnEnable", function () {
+        var index = parseInt($("input[name='index']").val(), 10);
+        $("#menu").zinoMenu("enable", index);
+    }).on("click", ".btnDisable", function () {
+        var index = parseInt($("input[name='index']").val(), 10);
+        $("#menu").zinoMenu("disable", index);
+    });
+});
+</script>
+</body>
+</html>

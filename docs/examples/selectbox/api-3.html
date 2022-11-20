@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>SelectBox - Zino UI HTML5 framework</title>
+        <meta name="description" content="Custom select box replacement.">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <link rel="stylesheet" href="../../../dist/themes/silver/zino.core.min.css">
+        <link rel="stylesheet" href="../../../dist/themes/silver/zino.selectbox.min.css">
+        <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+        <script src="../../../dist/js/zino.selectbox.min.js"></script>
+        <style type="text/css">body{padding: 15px; font: normal 12px Arial, sans-serif;}</style>
+    </head>
+    <body>
+    <select name="language" id="language" tabindex="1">
+    <option value="">-- Select preferred language --</option>
+	<option value="1">PHP</option>
+    <option value="2">C#</option>
+    <option value="3" disabled="disabled">Java</option>
+    <option value="4">Python</option>
+    <option value="5">Ruby</option>
+    <option value="6">Javascript</option>
+</select>
+
+<div style="float: right; width: 100px">
+	<input type="button" value="Open" id="btnOpen" tabindex="2" />
+	<input type="button" value="Close" id="btnClose" tabindex="3" />
+	<input type="button" value="Destroy" id="btnDestroy" tabindex="4" />
+	<input type="button" value="Create" id="btnCreate" tabindex="5" />
+	<input type="button" value="Disable" id="btnDisable" tabindex="6" />
+	<input type="button" value="Enable" id="btnEnable" tabindex="7" />
+</div>
+
+<script>
+$(function () {
+    $("#language").zinoSelectbox();
+    
+    $("#btnOpen").click(function (e) {
+        $("#language").zinoSelectbox('open');
+    });
+    $("#btnClose").click(function (e) {
+        $("#language").zinoSelectbox('close');
+    });
+    $("#btnCreate").click(function (e) {
+        $("#language").zinoSelectbox();
+    });
+    $("#btnDestroy").click(function (e) {
+        $("#language").zinoSelectbox('destroy');
+    });
+    $("#btnEnable").click(function (e) {
+        $("#language").zinoSelectbox('enable');
+    });
+    $("#btnDisable").click(function (e) {
+        $("#language").zinoSelectbox('disable');
+    });
+});
+</script>
+</body>
+</html>

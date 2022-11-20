@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>ChartMap - Zino UI HTML5 framework</title>
+        <meta name="description" content="Interactive HTML5 maps to plot geographical data.">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <link rel="stylesheet" href="../../../dist/themes/silver/zino.core.min.css">
+        <link rel="stylesheet" href="../../../dist/themes/silver/zino.chartmap.min.css">
+        <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+        <script src="../../../dist/js/zino.svg.min.js"></script>
+        <script src="../../../dist/js/zino.chartmap.min.js"></script>
+        <style type="text/css">body{padding: 15px; font: normal 12px Arial, sans-serif;}</style>
+    </head>
+    <body>
+    <div id="chartmap"></div>
+
+<script type="text/javascript" src="../../../dist/maps/IT.min.js"></script>
+<script>
+$(function () {
+    $("#chartmap").zinoChartmap({
+        map: "IT",
+        width: 530,
+        height: 320,
+        zoom: 2.4,
+        palette: false,
+        //background: "#EED592",
+        fill: "#EFEFEF",
+        provinces: [
+            {id: 'ITA-904', fill: '#028E45'},
+            {id: 'ITA-905', fill: '#028E45'},
+            {id: 'ITA-814', fill: '#028E45'},
+            {id: 'ITA-909', fill: '#028E45'},
+            {id: 'ITA-1037', fill: '#028E45'},
+            {id: 'ITA-1036', fill: '#028E45'},
+            {id: 'ITA-1038', fill: '#028E45'},
+            {id: 'ITA-813', fill: '#028E45'},
+            {id: 'ITA-816', fill: '#028E45'},
+            {id: 'ITA-820', fill: '#E42139'},
+            {id: 'ITA-818', fill: '#E42139'},
+            {id: 'ITA-822', fill: '#E42139'},
+            {id: 'ITA-819', fill: '#E42139'},
+            {id: 'ITA-823', fill: '#E42139'}
+        ]
+    });
+});
+</script>
+</body>
+</html>

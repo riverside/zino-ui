@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Splitter - Zino UI HTML5 framework</title>
+        <meta name="description" content="Splitter divide container into two or more resizable and/or collapsible panes.">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <link rel="stylesheet" href="../../../dist/themes/silver/zino.core.min.css">
+        <link rel="stylesheet" href="../../../dist/themes/silver/zino.splitter.min.css">
+        <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+        <script src="../../../dist/js/zino.position.min.js"></script>
+        <script src="../../../dist/js/zino.draggable.min.js"></script>
+        <script src="../../../dist/js/zino.splitter.min.js"></script>
+        <style type="text/css">body{padding: 15px; font: normal 12px Arial, sans-serif;}</style>
+    </head>
+    <body>
+    <div id="splitter">
+    <div class="splitter-north"></div>
+    <div class="splitter-south">South pane</div>
+</div>
+
+<div id="console"></div>
+
+<script>
+$(function () {
+    $("#splitter").zinoSplitter({
+        orientation: "vertical",
+        panes: [
+            {size: 165, dataUrl: "../../data/splitter.html"},
+            {size: 165, region: "south", collapsible: true}
+        ],
+        collapse: function (event, ui) {
+            log("collapse");
+        },
+        expand: function (event, ui) {
+            log("expand");
+        },
+        load: function (event, ui) {
+            log("load");
+        },
+        resize: function (event, ui) {
+            log("resize");
+        }
+    });
+    
+    function log(str) {
+        var $console = $("#console"),
+            $p = $console.find("p"),
+            t = '<p style="margin: 0; padding: 0; display: none">' + str + '</p>';
+        if ($p.length > 0) {
+            $p.eq(0).before(t).andSelf().slideDown();
+        } else {
+            $console.append(t).find("p").slideDown();
+        }
+    }
+});
+</script>
+
+<style type="text/css">
+#splitter{
+    height: 334px;
+    width: 265px; 
+    background-color: #957030;
+    float: left;
+}
+.splitter-south{
+    background-color: #EED592;
+}
+.splitter-north{
+    background-color: #CFAD70;
+}
+#console{
+    float: right; 
+    width: 240px; 
+    height: 180px; 
+    border: solid 1px #ccc; 
+    overflow-y: scroll; 
+    font: normal 12px Arial, sans-serif;    
+}
+</style>    </body>
+</html>

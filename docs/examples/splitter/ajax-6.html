@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Splitter - Zino UI HTML5 framework</title>
+        <meta name="description" content="Splitter divide container into two or more resizable and/or collapsible panes.">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <link rel="stylesheet" href="../../../dist/themes/silver/zino.core.min.css">
+        <link rel="stylesheet" href="../../../dist/themes/silver/zino.splitter.min.css">
+        <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+        <script src="../../../dist/js/zino.position.min.js"></script>
+        <script src="../../../dist/js/zino.draggable.min.js"></script>
+        <script src="../../../dist/js/zino.splitter.min.js"></script>
+        <style type="text/css">body{padding: 15px; font: normal 12px Arial, sans-serif;}</style>
+    </head>
+    <body>
+    <div id="splitter">
+    <div class="splitter-west"></div>
+    <div class="splitter-east">East pane</div>
+</div>
+
+<script>
+$(function () {
+    $("#splitter").zinoSplitter({
+        panes: [
+            {size: 265, dataUrl: "../../data/splitter.html"},
+            {size: 265, region: "east"}
+        ]
+    });
+});
+</script>
+
+<style type="text/css">
+#splitter{
+    height: 334px;
+    width: 534px; 
+    background-color: #957030;
+}
+.splitter-west{
+    background-color: #EED592;
+}
+.splitter-east{
+    background-color: #CFAD70;
+}
+</style>    </body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>ChartMap - Zino UI HTML5 framework</title>
+        <meta name="description" content="Interactive HTML5 maps to plot geographical data.">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <link rel="stylesheet" href="../../../dist/themes/silver/zino.core.min.css">
+        <link rel="stylesheet" href="../../../dist/themes/silver/zino.chartmap.min.css">
+        <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+        <script src="../../../dist/js/zino.svg.min.js"></script>
+        <script src="../../../dist/js/zino.chartmap.min.js"></script>
+        <style type="text/css">body{padding: 15px; font: normal 12px Arial, sans-serif;}</style>
+    </head>
+    <body>
+    <div id="chartmap"></div>
+
+<script type="text/javascript" src="../../../dist/maps/RU.min.js"></script>
+<script>
+$(function () {
+    $("#chartmap").zinoChartmap({
+        map: "RU",
+        width: 530,
+        height: 320,
+        zoom: 0.3,
+        fill: "#FF0000",
+        palette: false,
+        background: "#B1B1B1",
+        provinces: [
+            {id: 'RUS-2604', fill: '#FFFFFF'},
+            {id: 'RUS-2382', fill: '#FFFFFF'},
+            {id: 'RUS-2354', fill: '#FFFFFF'},
+            {id: 'RUS-2333', fill: '#FFFFFF'},
+            {id: 'RUS-2612', fill: '#FFFFFF'},
+            {id: 'RUS-2381', fill: '#FFFFFF'},
+            {id: 'RUS-2353', fill: '#FFFFFF'},
+            {id: 'RUS-2396', fill: '#0000FF'},
+            {id: 'RUS-2612', fill: '#0000FF'},
+            {id: 'RUS-2383', fill: '#0000FF'},
+            {id: 'RUS-2396', fill: '#0000FF'},
+            {id: 'RUS-2601', fill: '#0000FF'},
+            {id: 'RUS-2603', fill: '#0000FF'},
+            {id: 'RUS-2167', fill: '#0000FF'},
+            {id: 'RUS-2359', fill: '#0000FF'},
+            {id: 'RUS-2334', fill: '#0000FF'},
+            {id: 'RUS-2384', fill: '#0000FF'},
+            {id: 'RUS-2335', fill: '#0000FF'},
+            {id: 'RUS-2336', fill: '#0000FF'},
+            {id: 'RUS-2337', fill: '#0000FF'},
+            {id: 'RUS-2324', fill: '#0000FF'}
+        ]
+    });
+});
+</script>
+</body>
+</html>

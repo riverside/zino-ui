@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Editable - Zino UI HTML5 framework</title>
+        <meta name="description" content="Enables content editing directly in the page without requiring going to a separate page.">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <link rel="stylesheet" href="../../../dist/themes/silver/zino.core.min.css">
+        <link rel="stylesheet" href="../../../dist/themes/silver/zino.button.min.css">
+        <link rel="stylesheet" href="../../../dist/themes/silver/zino.editable.min.css">
+        <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+        <script src="../../../dist/js/zino.button.min.js"></script>
+        <script src="../../../dist/js/zino.editable.min.js"></script>
+        <style type="text/css">body{padding: 15px; font: normal 12px Arial, sans-serif;}</style>
+    </head>
+    <body>
+    <table>
+    <tr>
+        <td class="editable">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</td>
+    </tr>
+    <tr>
+        <td class="editable">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</td>
+    </tr>
+    <tr>
+        <td class="editable">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</td>
+    </tr>
+</table>
+
+<p>To activate editable control, click on the text above.</p>
+
+<script>
+$(function () {
+    $(".editable").zinoEditable({
+        buttons: {
+            "Save": function (ui) {
+                $(this).zinoEditable("save");
+            },
+            "Cancel": function (ui) {
+                $(this).zinoEditable("close");
+            }
+        },
+        load: function (event, ui) {
+            console.log("load");
+            return false;
+        },
+        save: function (event, ui) {
+            $.post("../../data/editable.json", {
+                field: $(this).attr("id"),
+                value: ui.control.val()
+            });
+            console.log("save");
+            //return false;
+        }
+    });
+});
+</script>
+</body>
+</html>

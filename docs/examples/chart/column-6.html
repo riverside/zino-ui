@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Chart - Zino UI HTML5 framework</title>
+        <meta name="description" content="Data visualization, pie & donuts charts.">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <link rel="stylesheet" href="../../../dist/themes/silver/zino.core.min.css">
+        <link rel="stylesheet" href="../../../dist/themes/silver/zino.chart.min.css">
+        <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+        <script src="../../../dist/js/zino.canvas.min.js"></script>
+        <script src="../../../dist/js/zino.svg.min.js"></script>
+        <script src="../../../dist/js/zino.chart.min.js"></script>
+        <style type="text/css">body{padding: 15px; font: normal 12px Arial, sans-serif;}</style>
+    </head>
+    <body>
+    <div id="chart"></div>
+
+<script>
+$(function () {
+    $("#chart").zinoChart({
+        type: "column",
+        width: 530,
+        height: 320,
+        legend: false,
+        categories: [{
+            'category': [
+                {'label': '2008'},
+                {'label': '2009'},
+                {'label': '2010'},
+                {'label': '2011'},
+                {'label': '2012'},
+                {'label': '2013'}
+            ]
+        }],
+        series: [{
+            'label': 'NY Knicks',
+            'color': '#3366CC',
+            'data': [
+                {'value': 1},
+                {'value': 3},
+                {'value': 5},
+                {'value': 2},
+                {'value': 4},
+                {'value': 6}
+            ]
+        }]
+    });
+});   
+</script>
+</body>
+</html>
