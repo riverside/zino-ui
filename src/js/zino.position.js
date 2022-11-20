@@ -1,11 +1,11 @@
 /*!
- * zino-ui v1.5 (https://github.com/riverside/zino-ui)
+ * zino-ui v1.5.1 (https://github.com/riverside/zino-ui)
  * Copyright 2012-2022 Dimitar Ivanov. All Rights Reserved.
  */
 (function (window, undefined) {
 	"use strict";
 	function Position(x, y) {
-		this.version = "1.5";
+		this.version = "1.5.1";
 		this.X = x;
 		this.Y = y;
 	}

@@ -1,5 +1,5 @@
 /*!
- * zino-ui v1.5 (https://github.com/riverside/zino-ui)
+ * zino-ui v1.5.1 (https://github.com/riverside/zino-ui)
  * Copyright 2012-2022 Dimitar Ivanov. All Rights Reserved.
  */
 (function ($, undefined) {
@@ -164,5 +164,5 @@
 		});
 	};
 	$.zinoAccordion = new Accordion();
-	$.zinoAccordion.version = "1.5";
+	$.zinoAccordion.version = "1.5.1";
 })(jQuery);

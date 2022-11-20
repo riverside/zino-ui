@@ -1,5 +1,5 @@
 /*!
- * zino-ui v1.5 (https://github.com/riverside/zino-ui)
+ * zino-ui v1.5.1 (https://github.com/riverside/zino-ui)
  * Copyright 2012-2022 Dimitar Ivanov. All Rights Reserved.
  */
 (function ($, undefined) {
@@ -26,7 +26,7 @@
 		} else if (e.srcElement) {
 			targ = e.srcElement;
 		}
-		if (targ.nodeType == 3) {
+		if (targ.nodeType === 3) {
 			targ = targ.parentNode;
 		}	
 		return targ;
@@ -201,7 +201,7 @@
 			$.extend(inst.settings, self._defaults, settings);
 
 			var i = 0, attrname;
-			if (target.nodeType === 1 && target.nodeName == "INPUT" && target.value.length > 0) {
+			if (target.nodeType === 1 && target.nodeName === "INPUT" && target.value.length > 0) {
 				var iso = getISOdate(target.value, inst.settings.dateFormat),
 					parts = iso.split("-"),
 					now = new Date(parseInt(parts[0], 10), parseInt(parts[1], 10) - 1, parseInt(parts[2], 10)),
@@ -651,21 +651,21 @@
 	$.fn.zinoCalendar = function (options) {
 		
 		var otherArgs = Array.prototype.slice.call(arguments, 1);
-		if (typeof options == 'string' && options === 'isDisabled') {
+		if (typeof options === 'string' && options === 'isDisabled') {
 			return $.zinoCalendar['_' + options + 'Calendar'].apply($.zinoCalendar, [this[0]].concat(otherArgs));
 		}
 		
-		if (options === 'option' && arguments.length === 2 && typeof arguments[1] == 'string') {
+		if (options === 'option' && arguments.length === 2 && typeof arguments[1] === 'string') {
 			return $.zinoCalendar['_' + options + 'Calendar'].apply($.zinoCalendar, [this[0]].concat(otherArgs));
 		}
 		
 		return this.each(function() {
-			typeof options == 'string' ?
+			typeof options === 'string' ?
 				$.zinoCalendar['_' + options + 'Calendar'].apply($.zinoCalendar, [this].concat(otherArgs)) :
 				$.zinoCalendar._attachCalendar(this, options);
 		});
 	};
 	
 	$.zinoCalendar = new Calendar();
-	$.zinoCalendar.version = "1.5";
+	$.zinoCalendar.version = "1.5.1";
 })(jQuery);
