@@ -1,5 +1,9 @@
 # zino-ui
  jQuery UI components
+ 
+ | GitHub pages |
+ | --- |
+ | [![pages-build-deployment](https://github.com/riverside/zino-ui/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/riverside/zino-ui/actions/workflows/pages/pages-build-deployment) |
 
 ##### UI Components
 - accordion
